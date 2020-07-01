@@ -1,0 +1,130 @@
+.navigation__list {
+  display: flex;
+  flex-direction: row;
+
+  @include reset-indents;
+  list-style: none;
+}
+
+.navigation__item {
+  display: flex;
+  flex-direction: row;
+  margin-right: 33px;
+
+  &:nth-last-child(1) {
+    margin-right: 0;
+  }
+
+  &--logo svg {
+    width: 70px;
+    height: 38px;
+  }
+  
+  &--logo {
+    margin-right: auto;
+  }
+}
+
+.navigation__link {
+  margin: auto;
+
+  text-decoration: none;
+  color: $color-white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.navigation__button-open,
+.navigation__button-close {
+  display: none;
+}
+
+// ---  Стили для Планшета  ---
+@media (max-width: $tablet-width) {
+  .navigation__item {
+    margin-right: 23px;
+
+    &--logo {
+      margin-right: auto;
+    }
+
+    &--logo svg {
+      width: 38px;
+      height: 20px;
+    }
+  }
+
+  .navigation__link {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+// ---  Стили для Мобильного экрана  ---
+@media (max-width: $mobile-width) {
+  .navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 15px 0 15px;
+    width: 100%;
+    height: 299px;
+    box-sizing: border-box;
+
+    background-color: $color-white;
+  }
+
+  .navigation__list {
+    flex-direction: column;
+  }
+
+  .navigation__item {
+    margin-right: 0;
+    margin-bottom: 21px;
+
+    align-self: start;
+
+    &--logo {
+      margin-right: auto;
+      margin-bottom: 41px;
+
+      order: -2;
+    }
+
+    &--logo svg {
+      width: 42px;
+      height: 22px;
+    }
+
+    &--logo path {
+      fill: $color-black;
+    }
+
+    &:nth-of-type(3) {
+      order: -1;
+    }
+  }
+
+  .navigation__link {
+    color: $color-black;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .navigation__button-close {
+    display: inline-block;
+    position: absolute;
+    top: 24px;
+    right: 14px;
+    width: 15px;
+    height: 15px;
+    @include reset-indents;
+
+    border: none;
+    background-image: url("/img/icon-close.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: transparent;
+  }
+}
