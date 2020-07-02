@@ -6,10 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Круизы в Антарктику</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/picturefill.min.js"></script>
 </head>
 <body class="body">
   <header class="header">
-    <nav class="header__navigation navigation">
+    <nav class="header__navigation navigation navigation--open">
       <ul class="navigation__list">
         <li class="navigation__item navigation__item--logo">
           <a class="navigation__link">
@@ -31,13 +32,30 @@
         </li>
       </ul>
 
-      <button class="navigation__button-open" type="button" aria-label="Открыть меню"></button>
-
-      <button class="navigation__button-close" type="button" aria-label="Закрыть меню"></button>
+      <button class="navigation__button-toggle" type="button" aria-label="Открыть/закрыть меню"></button>
     </nav>
 
-    <h1>Круизы в Антарктику</h1>
+    <h1>Круизы в&nbsp;Антарктику</h1>
     <p>Волшебный мир айсбергов и пингвинов</p>
   </header>
+
+  <main class="main">
+    <section class="promo">
+      <div class="promo__description">
+        <b>Путешествие на край Земли</b>
+        <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
+      </div>
+      <picture class="promo__image">
+        <source type="image/webp" srcset="/img/penguins-mobile.webp 1x, /img/penguins-mobile2x.webp 2x" media="(max-width: 767px)">
+        <source srcset="/img/penguins-mobile.jpg 1x, /img/penguins-mobile2x.jpg 2x" media="(max-width: 767px)">
+        <source type="image/webp" srcset="/img/penguins-tablet.webp 1x, /img/penguins-tablet2x.webp 2x" media="(max-width: 1023px)">
+        <source srcset="/img/penguins-tablet.jpg 1x, /img/penguins-tablet2x.jpg 2x" media="(max-width: 1023px)">
+        <source type="image/webp" srcset="/img/penguins-desktop.webp 1x, /img/penguins-desktop2x.webp 2x">
+        <img src="/img/penguins-desktop.jpg" srcset="/img/penguins-desktop2x.jpg 2x" alt="Пингвины">
+      </picture>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

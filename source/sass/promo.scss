@@ -1,0 +1,73 @@
+.promo__description {
+  margin-top: 56px;
+}
+
+.promo__description b {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  @include reset-indents;
+}
+
+.promo__description p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  @include reset-indents;
+
+  margin-top: 24px;
+  padding-right: 70px;
+}
+
+.promo {
+  display: flex;
+  flex-direction: row;
+
+  padding: 120px 0;
+}
+
+//  ---  Для планшетов  ---
+@media (max-width: $tablet-width) {
+  .promo {
+    padding: 100px 0;
+  }
+
+  .promo__description {
+    margin-top: -9px;
+  }
+
+  .promo__description b {
+    display: inline-block;
+    font-size: 26px;
+    line-height: 140%;
+
+    padding-right: 130px;
+  }
+  
+  .promo__description p {
+    margin-top: 16px;
+    padding-right: 30px;
+  }
+}
+
+//  ---  Для телефонов  ---
+@media (max-width: $mobile-width) {
+  .promo {
+    flex-direction: column;
+
+    padding: 66px 0;
+  }
+
+  .promo__description b {
+    font-size: 24px;
+    line-height: 34px;
+
+    padding-right: 85px;
+  }
+
+  .promo__description p {
+    margin-top: 15px;
+    margin-bottom: 33px;
+    padding-right: 0;
+  }
+}

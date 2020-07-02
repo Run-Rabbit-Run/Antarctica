@@ -1,8 +1,5 @@
 .header {
   height: 650px;
-  // width: 1366px;
-  // width: 768px;
-  // width: 320px;
   margin: 0 auto;
   padding: 35px 103px 0 103px;
   box-sizing: border-box;
@@ -12,6 +9,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media (min-resolution: $retina-dppx) {
+  .header {
+    background-image: url("/build/img/antarctica-desktop2x.jpg");
+  }
 }
 
 .header h1 {
@@ -39,10 +42,16 @@
 // ---  Стили для Планшета  ---
 @media (max-width: $tablet-width) {
   .header {
-    height: 500px;
+    height: 638px;
     padding: 30px 45px 0 45px;
 
     background-image: url("/img/antarctica-tablet.jpg");
+  }
+
+  @media (min-resolution: $retina-dppx) {
+    .header {
+      background-image: url("/build/img/antarctica-tablet2x.jpg");
+    }
   }
 
   .header h1 {
@@ -71,14 +80,23 @@
     background-image: url("/img/antarctica-mobile.jpg");
   }
 
+  @media (min-resolution: $retina-dppx) {
+    .header {
+      background-image: url("/build/img/antarctica-mobile2x.jpg");
+    }
+  }
+
   .header h1 {
     font-size: 36px;
     line-height: 125%;
+
+    margin-top: 130px;
   }
 
   .header p {
     font-size: 16px;
     line-height: 140%;
+
+    padding-right: 60px;
   }
 }
-

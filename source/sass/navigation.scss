@@ -35,8 +35,7 @@
   line-height: 20px;
 }
 
-.navigation__button-open,
-.navigation__button-close {
+.navigation__button-toggle {
   display: none;
 }
 
@@ -54,7 +53,7 @@
       height: 20px;
     }
   }
-
+  
   .navigation__link {
     font-size: 14px;
     line-height: 17px;
@@ -62,8 +61,39 @@
 }
 
 // ---  Стили для Мобильного экрана  ---
+//  ---  При Закрытом меню  ---
 @media (max-width: $mobile-width) {
-  .navigation {
+  .navigation__item {
+    display: none;
+
+    &--logo {
+      display: flex;
+    }
+
+    &--logo svg {
+      width: 42px;
+      height: 22px;
+    }
+  }
+
+  .navigation__button-toggle {
+    display: inline-block;
+    position: absolute;
+    top: 24px;
+    right: 15px;
+    width: 24px;
+    height: 14px;
+    @include reset-indents;
+
+    border: none;
+    background-image: url("/img/icon-hamburger.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: transparent;
+  }
+
+// ---  При открытом меню  ---
+  .navigation--open {
     position: absolute;
     top: 0;
     left: 0;
@@ -75,11 +105,12 @@
     background-color: $color-white;
   }
 
-  .navigation__list {
+  .navigation--open .navigation__list {
     flex-direction: column;
   }
 
-  .navigation__item {
+  .navigation--open .navigation__item {
+    display: flex;
     margin-right: 0;
     margin-bottom: 21px;
 
@@ -106,25 +137,17 @@
     }
   }
 
-  .navigation__link {
+  .navigation--open .navigation__link {
     color: $color-black;
     font-size: 18px;
     line-height: 22px;
   }
 
-  .navigation__button-close {
-    display: inline-block;
-    position: absolute;
-    top: 24px;
+  .navigation--open .navigation__button-toggle {
     right: 14px;
     width: 15px;
     height: 15px;
-    @include reset-indents;
 
-    border: none;
-    background-image: url("/img/icon-close.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-color: transparent;
+    background-image: url("/img/icon-close.svg");
   }
 }
