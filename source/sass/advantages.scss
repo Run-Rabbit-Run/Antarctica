@@ -60,6 +60,10 @@
 
   background-color: $color-white;
 
+  &:nth-last-child(1) {
+    margin-right: 0;
+  }
+
   &::before {
     position: absolute;
     top: 30px;
@@ -126,7 +130,7 @@
   .advantages__item {
     width: 206px;
     min-height: 310px;
-    padding: 71px 15px 0 20px;
+    padding: 71px 17px 0 20px;
 
     &::before {
       top: 25px;
@@ -196,6 +200,7 @@
     width: 290px;
     min-height: 250px;
     margin-bottom: 30px;
+    margin-right: 0;
 
     &:nth-last-child(1) {
       margin-bottom: 0;
