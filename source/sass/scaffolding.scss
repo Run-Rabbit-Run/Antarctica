@@ -62,21 +62,3 @@
 
   background-color: $color-white;
 }
-
-.main {
-  padding: 0 103px;
-}
-
-//  ---  Для планшетов  ---
-@media (max-width: $tablet-width) {
-  .main {
-    padding: 0 45px;
-  }
-}
-
-//  ---  Для телефонов  ---
-@media (max-width: $mobile-width) {
-  .main {
-    padding: 0 15px;
-  }
-}

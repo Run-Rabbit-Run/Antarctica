@@ -1,3 +1,10 @@
+.promo {
+  display: flex;
+  flex-direction: row;
+
+  padding: 120px 103px 115px 103px;
+}
+
 .promo__description {
   margin-top: 56px;
 }
@@ -19,17 +26,10 @@
   padding-right: 70px;
 }
 
-.promo {
-  display: flex;
-  flex-direction: row;
-
-  padding: 120px 0;
-}
-
 //  ---  Для планшетов  ---
 @media (max-width: $tablet-width) {
   .promo {
-    padding: 100px 0;
+    padding: 100px 45px 93px 45px;
   }
 
   .promo__description {
@@ -55,7 +55,7 @@
   .promo {
     flex-direction: column;
 
-    padding: 66px 0;
+    padding: 66px 15px 60px 15px;
   }
 
   .promo__description b {
