@@ -1,4 +1,61 @@
+.cruises {
+  padding: 0 118px 0 118px;
+  margin-top: 110px;
+}
+
 .cruises__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
   @include reset-indents;
   list-style: none;
+}
+
+.cruises__item {
+  margin-bottom: 30px;
+}
+
+.cruises h2 {
+  @include reset-indents;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+
+  margin-bottom: 49px;
+}
+
+// ---  Стили для Планшета  ---
+@media (max-width: $tablet-width) {
+  .cruises h2 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .cruises {
+    padding: 0 60px 0 60px;
+    margin-top: 90px;
+  }
+}
+
+// ---  Стили для Мобильного экрана  ---
+@media (max-width: $mobile-width) {
+  .cruises h2 {
+    font-size: 24px;
+    line-height: 36px;
+
+    margin-bottom: 30px;
+  }
+
+  .cruises {
+    padding: 0 25px 0 25px;
+    margin-top: 56px;
+  }
+
+  .cruises__item {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
