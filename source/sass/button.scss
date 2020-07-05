@@ -1,5 +1,7 @@
 .button {
   display: flex;
+
+  border: none;
   
   @include reset-indents;
   text-decoration: none;
@@ -9,14 +11,15 @@
   color: $color-black;
 
   min-height: 40px;
-  width: calc(100% - 2px);
-  margin-top: 14px;
-  margin-left: 2px;
   box-sizing: border-box;
 
   background-color: $color-white;
 
   & span {
     margin: auto;
+  }
+
+  &:focus {
+    outline: 3px solid #2090ff;
   }
 }

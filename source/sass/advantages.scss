@@ -1,6 +1,6 @@
 .advantages {
   background-color: #d8e5f4;
-  background-image: url("/img/advantages-bcg-desktop.png");
+  background-image: url("../img/advantages-bcg-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
@@ -10,7 +10,7 @@
 
 @media (min-resolution: $retina-dppx) {
   .advantages {
-    background-image: url("/img/advantages-bcg-desktop2x.png");
+    background-image: url("../img/advantages-bcg-desktop2x.png");
   }
 }
 
@@ -79,7 +79,7 @@
     width: 27px;
     height: 32px;
     
-    background-image: url("/img/icon-ship-desktop.svg");
+    background-image: url("../img/icon-ship-desktop.svg");
   }
 
   &--tick-icon::before {
@@ -88,7 +88,7 @@
     width: 38px;
     height: 21px;
 
-    background-image: url("/img/icon-tick-desktop.svg");
+    background-image: url("../img/icon-tick-desktop.svg");
   }
 
   &--boat-icon::before {
@@ -97,7 +97,7 @@
     width: 42px;
     height: 15px;
 
-    background-image: url("/img/icon-boat-desktop.svg");
+    background-image: url("../img/icon-boat-desktop.svg");
   }
 }
 
@@ -106,12 +106,12 @@
   .advantages {
     padding: 90px 45px 100px 45px;
     
-    background-image: url("/img/advantages-bcg-tablet.png");
+    background-image: url("../img/advantages-bcg-tablet.png");
   }
 
   @media (min-resolution: $retina-dppx) {
     .advantages {
-      background-image: url("/img/advantages-bcg-tablet2x.png");
+      background-image: url("../img/advantages-bcg-tablet2x.png");
     }
   }
 
@@ -141,7 +141,7 @@
       width: 21px;
       height: 26px;
 
-      background-image: url("/img/icon-ship.svg");
+      background-image: url("../img/icon-ship.svg");
     }
   
     &--tick-icon::before {
@@ -150,7 +150,7 @@
       width: 33px;
       height: 19px;
 
-      background-image: url("/img/icon-tick.svg");
+      background-image: url("../img/icon-tick.svg");
     }
   
     &--boat-icon::before {
@@ -159,7 +159,7 @@
       width: 38px;
       height: 13px;
 
-      background-image: url("/img/icon-boat.svg");
+      background-image: url("../img/icon-boat.svg");
     }
   }
 }
@@ -169,12 +169,12 @@
   .advantages {
     padding: 57px 15px 65px 15px;
 
-    background-image: url("/img/advantages-bcg-mobile.png");
+    background-image: url("../img/advantages-bcg-mobile.png");
   }
 
   @media (min-resolution: $retina-dppx) {
     .advantages {
-      background-image: url("/img/advantages-bcg-mobile2x.png");
+      background-image: url("../img/advantages-bcg-mobile2x.png");
     }
   }
 

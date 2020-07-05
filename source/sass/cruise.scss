@@ -12,75 +12,75 @@
   background-size: cover;
 
   &--astoria-background {
-    background-image: url("/img/bcg-astoria-desktop.png");
+    background-image: url("../img/bcg-astoria-desktop.png");
 
     @media (min-resolution: $retina-dppx) {
       .header {
-        background-image: url("/img/bcg-astoria-desktop2x.png");
+        background-image: url("../img/bcg-astoria-desktop2x.png");
       }
     }
   }
 
   &--alain-background {
-    background-image: url("/img/bcg-minion-desktop.png");
+    background-image: url("../img/bcg-minion-desktop.png");
 
     @media (min-resolution: $retina-dppx) {
       .header {
-        background-image: url("/img/bcg-minion-desktop2x.png");
+        background-image: url("../img/bcg-minion-desktop2x.png");
       }
     }
   }
   &--atlantis-background {
-    background-image: url("/img/bcg-atlantis-desktop.png");
+    background-image: url("../img/bcg-atlantis-desktop.png");
 
     @media (min-resolution: $retina-dppx) {
       .header {
-        background-image: url("/img/bcg-atlantis-desktop2x.png");
+        background-image: url("../img/bcg-atlantis-desktop2x.png");
       }
     }
   }
   &--odissey-background {
-    background-image: url("/img/bcg-odissey-desktop.png");
+    background-image: url("../img/bcg-odissey-desktop.png");
 
     @media (min-resolution: $retina-dppx) {
       .header {
-        background-image: url("/img/bcg-odissey-desktop2x.png");
+        background-image: url("../img/bcg-odissey-desktop2x.png");
       }
     }
   }
   &--olimpia-background {
-    background-image: url("/img/bcg-olimpia-desktop.png");
+    background-image: url("../img/bcg-olimpia-desktop.png");
 
     @media (min-resolution: $retina-dppx) {
       .header {
-        background-image: url("/img/bcg-olimpia-desktop2x.png");
+        background-image: url("../img/bcg-olimpia-desktop2x.png");
       }
     }
   }
   &--avrora-background {
-    background-image: url("/img/bcg-avrora-desktop.png");
+    background-image: url("../img/bcg-avrora-desktop.png");
 
     @media (min-resolution: $retina-dppx) {
       .header {
-        background-image: url("/img/bcg-avrora-desktop2x.png");
+        background-image: url("../img/bcg-avrora-desktop2x.png");
       }
     }
   }
   &--leonor-background {
-    background-image: url("/img/bcg-leonor-desktop.png");
+    background-image: url("../img/bcg-leonor-desktop.png");
 
     @media (min-resolution: $retina-dppx) {
       .header {
-        background-image: url("/img/bcg-leonor-desktop2x.png");
+        background-image: url("../img/bcg-leonor-desktop2x.png");
       }
     }
   }
   &--minion-background {
-    background-image: url("/img/bcg-minion-desktop.png");
+    background-image: url("../img/bcg-minion-desktop.png");
 
     @media (min-resolution: $retina-dppx) {
       .header {
-        background-image: url("/img/bcg-minion-desktop2x.png");
+        background-image: url("../img/bcg-minion-desktop2x.png");
       }
     }
   }
@@ -139,6 +139,10 @@
 }
 
 .cruise__button {
+  width: calc(100% - 2px);
+  margin-top: 14px;
+  margin-left: 2px;
+  
   opacity: 0;
 }
 
@@ -149,75 +153,75 @@
     padding: 29px 35px 5px 33px;
 
     &--astoria-background {
-      background-image: url("/img/bcg-astoria-tablet.png");
+      background-image: url("../img/bcg-astoria-tablet.png");
   
       @media (min-resolution: $retina-dppx) {
         .header {
-          background-image: url("/img/bcg-astoria-tablet2x.png");
+          background-image: url("../img/bcg-astoria-tablet2x.png");
         }
       }
     }
   
     &--alain-background {
-      background-image: url("/img/bcg-minion-tablet.png");
+      background-image: url("../img/bcg-minion-tablet.png");
   
       @media (min-resolution: $retina-dppx) {
         .header {
-          background-image: url("/img/bcg-minion-tablet2x.png");
+          background-image: url("../img/bcg-minion-tablet2x.png");
         }
       }
     }
     &--atlantis-background {
-      background-image: url("/img/bcg-atlantis-tablet.png");
+      background-image: url("../img/bcg-atlantis-tablet.png");
   
       @media (min-resolution: $retina-dppx) {
         .header {
-          background-image: url("/img/bcg-atlantis-tablet2x.png");
+          background-image: url("../img/bcg-atlantis-tablet2x.png");
         }
       }
     }
     &--odissey-background {
-      background-image: url("/img/bcg-odissey-tablet.png");
+      background-image: url("../img/bcg-odissey-tablet.png");
   
       @media (min-resolution: $retina-dppx) {
         .header {
-          background-image: url("/img/bcg-odissey-tablet2x.png");
+          background-image: url("../img/bcg-odissey-tablet2x.png");
         }
       }
     }
     &--olimpia-background {
-      background-image: url("/img/bcg-olimpia-tablet.png");
+      background-image: url("../img/bcg-olimpia-tablet.png");
   
       @media (min-resolution: $retina-dppx) {
         .header {
-          background-image: url("/img/bcg-olimpia-tablet2x.png");
+          background-image: url("../img/bcg-olimpia-tablet2x.png");
         }
       }
     }
     &--avrora-background {
-      background-image: url("/img/bcg-avrora-tablet.png");
+      background-image: url("../img/bcg-avrora-tablet.png");
   
       @media (min-resolution: $retina-dppx) {
         .header {
-          background-image: url("/img/bcg-avrora-tablet2x.png");
+          background-image: url("../img/bcg-avrora-tablet2x.png");
         }
       }
     }
     &--leonor-background {
-      background-image: url("/img/bcg-leonor-tablet.png");
+      background-image: url("../img/bcg-leonor-tablet.png");
   
       @media (min-resolution: $retina-dppx) {
         .header {
-          background-image: url("/img/bcg-leonor-tablet2x.png");
+          background-image: url("../img/bcg-leonor-tablet2x.png");
         }
       }
     }
     &--minion-background {
-      background-image: url("/img/bcg-minion-tablet.png");
+      background-image: url("../img/bcg-minion-tablet.png");
   
       @media (min-resolution: $retina-dppx) {
         .header {
-          background-image: url("/img/bcg-minion-tablet2x.png");
+          background-image: url("../img/bcg-minion-tablet2x.png");
         }
       }
     }
@@ -235,75 +239,75 @@
     width: 270px;
 
     &--astoria-background {
-      background-image: url("/img/bcg-astoria-mobile.png");
+      background-image: url("../img/bcg-astoria-mobile.png");
   
       @media (min-resolution: $retina-dppx) {
         .header {
-          background-image: url("/img/bcg-astoria-mobile2x.png");
+          background-image: url("../img/bcg-astoria-mobile2x.png");
         }
       }
     }
   
     &--alain-background {
-      background-image: url("/img/bcg-minion-mobile.png");
+      background-image: url("../img/bcg-minion-mobile.png");
   
       @media (min-resolution: $retina-dppx) {
         .header {
-          background-image: url("/img/bcg-minion-mobile2x.png");
+          background-image: url("../img/bcg-minion-mobile2x.png");
         }
       }
     }
     &--atlantis-background {
-      background-image: url("/img/bcg-atlantis-mobile.png");
+      background-image: url("../img/bcg-atlantis-mobile.png");
   
       @media (min-resolution: $retina-dppx) {
         .header {
-          background-image: url("/img/bcg-atlantis-mobile2x.png");
+          background-image: url("../img/bcg-atlantis-mobile2x.png");
         }
       }
     }
     &--odissey-background {
-      background-image: url("/img/bcg-odissey-mobile.png");
+      background-image: url("../img/bcg-odissey-mobile.png");
   
       @media (min-resolution: $retina-dppx) {
         .header {
-          background-image: url("/img/bcg-odissey-mobile2x.png");
+          background-image: url("../img/bcg-odissey-mobile2x.png");
         }
       }
     }
     &--olimpia-background {
-      background-image: url("/img/bcg-olimpia-mobile.png");
+      background-image: url("../img/bcg-olimpia-mobile.png");
   
       @media (min-resolution: $retina-dppx) {
         .header {
-          background-image: url("/img/bcg-olimpia-mobile2x.png");
+          background-image: url("../img/bcg-olimpia-mobile2x.png");
         }
       }
     }
     &--avrora-background {
-      background-image: url("/img/bcg-avrora-mobile.png");
+      background-image: url("../img/bcg-avrora-mobile.png");
   
       @media (min-resolution: $retina-dppx) {
         .header {
-          background-image: url("/img/bcg-avrora-mobile2x.png");
+          background-image: url("../img/bcg-avrora-mobile2x.png");
         }
       }
     }
     &--leonor-background {
-      background-image: url("/img/bcg-leonor-mobile.png");
+      background-image: url("../img/bcg-leonor-mobile.png");
   
       @media (min-resolution: $retina-dppx) {
         .header {
-          background-image: url("/img/bcg-leonor-mobile2x.png");
+          background-image: url("../img/bcg-leonor-mobile2x.png");
         }
       }
     }
     &--minion-background {
-      background-image: url("/img/bcg-minion-mobile.png");
+      background-image: url("../img/bcg-minion-mobile.png");
   
       @media (min-resolution: $retina-dppx) {
         .header {
-          background-image: url("/img/bcg-minion-mobile2x.png");
+          background-image: url("../img/bcg-minion-mobile2x.png");
         }
       }
     }

@@ -1,0 +1,135 @@
+.booking {
+  width: 403px;
+  min-height: 455px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+
+  padding: 44px 50px 50px 50px;
+
+  background-color: $color-black;
+}
+
+.booking p {
+  @include reset-indents;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-white;
+
+  margin-bottom: 27px;
+}
+
+.booking__input-field {
+  width: 100%;
+  height: 43px;
+  margin-bottom: 20px;
+  padding-left: 16px;
+  box-sizing: border-box;
+
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-black;
+
+  border: none;
+  
+  background-color: $color-white;
+
+  &::placeholder {
+    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: $color-black;
+  }
+
+  &:focus {
+    outline: 3px solid #2090ff;
+  }
+}
+
+.booking__personal-data-text {
+  position: relative;
+  display: inline-block;
+
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  color: $color-white;
+
+  padding-left: 23px;
+
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: -4px;
+    left: 0;
+    content: "";
+
+    width: 18px;
+    height: 18px;
+
+    background-color: $color-white;
+  }
+}
+
+.booking__personal-data-checkbox:checked + .booking__personal-data-text::before {
+  background-image: url("../img/icon-checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.booking__personal-data-checkbox:focus + .booking__personal-data-text::before {
+  outline: 3px solid #2090ff;
+}
+
+.booking__submit {
+  width: 100%;
+  height: 43px;
+  margin-top: 29px;
+  padding-left: 90px;
+
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+
+  cursor: pointer;
+}
+
+// ---  Стили для Мобильного экрана  ---
+@media (max-width: $mobile-width) {
+  .booking {
+    width: 290px;
+
+    padding: 35px 30px 40px 30px;
+  }
+
+  .booking p {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+
+    margin-bottom: 28px;
+  }
+
+  .booking__personal-data-text {
+    padding-left: 28px;
+
+    &::before {
+      top: 3px;
+  
+      width: 20px;
+      height: 20px;
+
+      line-height: 12px;
+    }
+  }
+
+  .booking__submit {
+    margin-top: 22px;
+    padding-left: 53px;
+  }
+}

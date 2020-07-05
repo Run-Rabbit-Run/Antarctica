@@ -33,6 +33,10 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+
+  &:focus {
+    outline: 3px solid #2090ff;
+  }
 }
 
 .navigation__button-toggle {
@@ -90,6 +94,10 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-color: transparent;
+
+    &:focus {
+      outline: 3px solid #2090ff;
+    }
   }
 
 // ---  При открытом меню  ---
@@ -149,5 +157,9 @@
     height: 15px;
 
     background-image: url("/img/icon-close.svg");
+  }
+
+  &:focus {
+    outline: 3px solid #2090ff;
   }
 }

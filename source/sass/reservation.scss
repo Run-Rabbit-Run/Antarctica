@@ -1,0 +1,136 @@
+.reservation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 50px 163px 50px 163px;
+
+  background-color: #a7d0f9;
+  background-image: url("../img/bcg-booking-desktop.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+@media (min-resolution: $retina-dppx) {
+  .reservation {
+    background-image: url("../img/bcg-booking-desktop2x.png");
+  }
+}
+
+.reservation__description {
+  display: flex;
+  flex-direction: column;
+
+  width: 500px;
+  margin: auto 0;
+  padding-bottom: 7px;
+  box-sizing: border-box;
+}
+
+.reservation__description h2 {
+  @include reset-indents;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+
+  margin-bottom: 8px;
+}
+
+.reservation__description p {
+  @include reset-indents;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+
+  padding-right: 110px;
+}
+
+// ---  Стили для Планшета  ---
+@media (max-width: $tablet-width) {
+  .reservation {
+    flex-direction: column;
+
+    padding-top: 88px;
+    padding-left: 0;
+    padding-right: 0;
+
+    background-image: url("../img/bcg-booking-tablet.png");
+  }
+
+  @media (min-resolution: $retina-dppx) {
+    .reservation {
+      background-image: url("../img/bcg-booking-tablet2x.png");
+    }
+  }
+
+  .reservation__form {
+    align-self: center;
+  }
+
+  .reservation__description {
+    align-self: center;
+
+    margin-bottom: 45px;
+  }
+
+  .reservation__description h2 {
+    font-size: 34px;
+    line-height: 51px;
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+  }
+
+  .reservation__description p {
+    width: 350px;
+    padding-right: 0;
+
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// ---  Стили для Мобильного экрана  ---
+@media (max-width: $mobile-width) {
+  .reservation {
+
+    padding-top: 59px;
+    padding-left: 0;
+    padding-right: 0;
+
+    background-image: url("../img/bcg-booking-mobile.png");
+  }
+
+  @media (min-resolution: $retina-dppx) {
+    .reservation {
+      background-image: url("../img/bcg-booking-mobile2x.png");
+    }
+  }
+
+  .reservation__description h2 {
+    width: 265px;
+    margin-bottom: 14px;
+
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+  }
+
+  .reservation__description p {
+    width: 265px;
+
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;    
+  }
+
+  .reservation__description {
+    width: auto;
+    margin-bottom: 27px;
+  }
+}

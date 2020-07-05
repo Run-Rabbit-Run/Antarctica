@@ -342,6 +342,32 @@
         </li>
       </ul>
     </section>
+
+    <section class="reservation">
+      <div class="reservation__description">
+        <h2>Раннее бронирование</h2>
+        <p>Забронируйте тур за 3-6 месяцев
+          до&nbsp;даты выезда и&nbsp;сэкономьте до 50%</p>
+      </div>
+      <div class="reservation__form booking">
+        <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время</p>
+        <form action="#" method="POST">
+          <input class="booking__input-field" type="text" id="name" placeholder="Валерия">
+          <label class="visually-hidden" for="name">Ваше имя</label>
+
+          <input class="booking__input-field" type="tel" id="tel-number" placeholder="89236889975" pattern="[0-9]{10,11}">
+          <label class="visually-hidden" for="tel-number">Ваш номер телефона</label>
+
+          <input class="booking__input-field" type="email" id="email" placeholder="grishaewa.lera@gmail.com">
+          <label class="visually-hidden" for="email">Ваш адрес электронной почты</label>
+
+          <input class="visually-hidden booking__personal-data-checkbox" type="checkbox" id="personal-data" checked>
+          <label class="booking__personal-data-text" for="personal-data">Я согласен на обработку моих&nbsp;персональных данных</label>
+
+          <input class="booking__submit button" type="submit" value="Оставить заявку">
+        </form>
+      </div>
+    </section>
   </main>
 
   <script src="js/script.js"></script>
