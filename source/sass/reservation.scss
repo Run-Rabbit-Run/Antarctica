@@ -51,9 +51,7 @@
   .reservation {
     flex-direction: column;
 
-    padding-top: 88px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 88px 0 100px 0;
 
     background-image: url("../img/bcg-booking-tablet.png");
   }
@@ -98,10 +96,7 @@
 // ---  Стили для Мобильного экрана  ---
 @media (max-width: $mobile-width) {
   .reservation {
-
-    padding-top: 59px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 59px 0 65px 0;
 
     background-image: url("../img/bcg-booking-mobile.png");
   }

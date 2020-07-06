@@ -40,8 +40,8 @@
     font-family: "Montserrat", "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 21px;
     color: $color-black;
+    opacity: 1;
   }
 
   &:focus {
@@ -86,15 +86,16 @@
 }
 
 .booking__submit {
+  display: block;
   width: 100%;
   height: 43px;
   margin-top: 29px;
-  padding-left: 90px;
 
   font-family: "Montserrat", "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
+  text-align: center;
 
   cursor: pointer;
 }

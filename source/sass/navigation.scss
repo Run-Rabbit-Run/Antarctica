@@ -1,6 +1,7 @@
 .navigation__list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 
   @include reset-indents;
   list-style: none;
@@ -9,7 +10,9 @@
 .navigation__item {
   display: flex;
   flex-direction: row;
+
   margin-right: 33px;
+  margin-top: -3px;
 
   &:nth-last-child(1) {
     margin-right: 0;
@@ -21,6 +24,7 @@
   }
   
   &--logo {
+    margin-top: 0;
     margin-right: auto;
   }
 }
@@ -46,7 +50,7 @@
 // ---  Стили для Планшета  ---
 @media (max-width: $tablet-width) {
   .navigation__item {
-    margin-right: 23px;
+    margin-right: 24px;
 
     &--logo {
       margin-right: auto;
@@ -161,5 +165,55 @@
 
   &:focus {
     outline: 3px solid #2090ff;
+  }
+}
+
+
+//  ---------  Footer  ---------
+
+.navigation--footer .navigation__item--logo {
+  margin-right: 40px;
+}
+
+// ---  Стили для Планшета  ---
+@media (max-width: $tablet-width) {
+  .navigation--footer .navigation__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .navigation--footer .navigation__item {
+    margin-right: 23px;
+    margin-top: -5px;
+
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+  }
+
+  .navigation--footer .navigation__item--logo {
+    margin-right: 25px;
+    margin-top: 0;
+  }
+}
+
+// ---  Стили для Мобильного экрана  ---
+@media (max-width: $mobile-width) {
+  .navigation--footer .navigation__list {
+    flex-direction: column;
+  }
+  
+  .navigation--footer .navigation__link {
+    margin: 0;
+  }
+  
+  .navigation--footer .navigation__item {
+    display: flex;
+
+    margin-bottom: 22px;
+  }
+
+  .navigation--footer .navigation__item--logo {
+    margin-bottom: 30px;
   }
 }

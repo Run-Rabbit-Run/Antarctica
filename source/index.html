@@ -11,6 +11,8 @@
 <body class="body">
   <header class="header">
     <nav class="header__navigation navigation navigation--open">
+      <button class="navigation__button-toggle" type="button" aria-label="Открыть/закрыть меню"></button>
+
       <ul class="navigation__list">
         <li class="navigation__item navigation__item--logo">
           <a class="navigation__link">
@@ -31,8 +33,6 @@
           <a href="#" class="navigation__link">Контакты</a>
         </li>
       </ul>
-
-      <button class="navigation__button-toggle" type="button" aria-label="Открыть/закрыть меню"></button>
     </nav>
 
     <h1>Круизы в&nbsp;Антарктику</h1>
@@ -364,11 +364,74 @@
           <input class="visually-hidden booking__personal-data-checkbox" type="checkbox" id="personal-data" checked>
           <label class="booking__personal-data-text" for="personal-data">Я согласен на обработку моих&nbsp;персональных данных</label>
 
-          <input class="booking__submit button" type="submit" value="Оставить заявку">
+          <button class="booking__submit button" type="submit">Оставить заявку</button>
         </form>
       </div>
     </section>
+
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="contacts__map">
+        <picture class="contacts__image">
+          <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile2x.webp 2x" media="(max-width: 767px)">
+          <source srcset="img/map-mobile.jpg 1x, img/map-mobile2x.jpg 2x" media="(max-width: 767px)">
+          <source type="image/webp" srcset="img/map-tablet.webp 1x, img/map-tablet2x.webp 2x" media="(max-width: 1023px)">
+          <source srcset="img/map-tablet.jpg 1x, img/map-tablet2x.jpg 2x" media="(max-width: 1023px)">
+          <source type="image/webp" srcset="img/map-desktop.webp 1x, img/map-desktop2x.webp 2x">
+          <img src="img/map-desktop.jpg" srcset="img/map-desktop2x.jpg 2x" alt="г. Санкт-Петербург, ул. Большая Конюшенная, 19/8">
+        </picture>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ada1302d513c3263de89082e58a3918366bf9f37aa79c43b733e09ffc6156e381&amp;source=constructor" width="560" height="306"></iframe>
+      </div>
+      <div class="contacts__info">
+        <b class="contacts__text">У вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и мы вам все расскажем.</b>
+        <p class="contacts__address">г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</p>
+        <a class="contacts__tel" href="tel:88002000000">8-800-200-00-00</a>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    <nav class="navigation navigation--footer">
+      <ul class="navigation__list">
+        <li class="navigation__item navigation__item--logo">
+          <a class="navigation__link">
+            <include src="build/img/logo.svg"></include>
+            <span class="visually-hidden">Главная страница</span>
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Преимущества</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Направления</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Ближайшие круизы</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="footer__social-list">
+      <li class="footer__social-item">
+        <a class="footer__social-link footer__social-link--facebook" href="#">
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+      <li class="footer__social-item">
+        <a class="footer__social-link footer__social-link--instagram" href="#">
+          <span class="visually-hidden">Instagram</span>
+        </a>
+      </li>
+      <li class="footer__social-item">
+        <a class="footer__social-link footer__social-link--twitter" href="#">
+          <span class="visually-hidden">Twitter</span>
+        </a>
+      </li>
+    </ul>
+  </footer>
 
   <script src="js/script.js"></script>
 </body>

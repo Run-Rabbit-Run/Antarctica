@@ -11,6 +11,8 @@
 <body class="body">
   <header class="header">
     <nav class="header__navigation navigation navigation--open">
+      <button class="navigation__button-toggle" type="button" aria-label="Открыть/закрыть меню"></button>
+
       <ul class="navigation__list">
         <li class="navigation__item navigation__item--logo">
           <a class="navigation__link">
@@ -36,8 +38,6 @@
           <a href="#" class="navigation__link">Контакты</a>
         </li>
       </ul>
-
-      <button class="navigation__button-toggle" type="button" aria-label="Открыть/закрыть меню"></button>
     </nav>
 
     <h1>Круизы в&nbsp;Антарктику</h1>
@@ -369,11 +369,79 @@
           <input class="visually-hidden booking__personal-data-checkbox" type="checkbox" id="personal-data" checked="">
           <label class="booking__personal-data-text" for="personal-data">Я согласен на обработку моих&nbsp;персональных данных</label>
 
-          <input class="booking__submit button" type="submit" value="Оставить заявку">
+          <button class="booking__submit button" type="submit">Оставить заявку</button>
         </form>
       </div>
     </section>
+
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="contacts__map">
+        <picture class="contacts__image">
+          <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile2x.webp 2x" media="(max-width: 767px)">
+          <source srcset="img/map-mobile.jpg 1x, img/map-mobile2x.jpg 2x" media="(max-width: 767px)">
+          <source type="image/webp" srcset="img/map-tablet.webp 1x, img/map-tablet2x.webp 2x" media="(max-width: 1023px)">
+          <source srcset="img/map-tablet.jpg 1x, img/map-tablet2x.jpg 2x" media="(max-width: 1023px)">
+          <source type="image/webp" srcset="img/map-desktop.webp 1x, img/map-desktop2x.webp 2x">
+          <img src="img/map-desktop.jpg" srcset="img/map-desktop2x.jpg 2x" alt="г. Санкт-Петербург, ул. Большая Конюшенная, 19/8">
+        </picture>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ada1302d513c3263de89082e58a3918366bf9f37aa79c43b733e09ffc6156e381&amp;source=constructor" width="560" height="306"></iframe>
+      </div>
+      <div class="contacts__info">
+        <b class="contacts__text">У вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и мы вам все расскажем.</b>
+        <p class="contacts__address">г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</p>
+        <a class="contacts__tel" href="tel:88002000000">8-800-200-00-00</a>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    <nav class="navigation navigation--footer">
+      <ul class="navigation__list">
+        <li class="navigation__item navigation__item--logo">
+          <a class="navigation__link">
+            <svg width="70" height="38" viewBox="0 0 70 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.903517 31.125L14.6726 12.5429L18.4395 14.556L27.4026 0L32.9879 6.65881L35.0665 4.95532L43.1199 15.1755L48.8355 8.36191L64.8126 31.125L49.42 11.7689L47.0817 19.8984L49.225 26.3249L35.456 7.35558L35.3069 13.8279L43.1199 31.125L28.5064 4.33574L32.7282 18.8145L26.8181 4.72292L23.5706 14.0916L24.2198 7.97472L16.1013 30.0411L17.0753 20.75L13.6981 17.0338L0.903517 31.125Z" fill="#F9FBFD"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M69.4414 34.0314C47.641 16.428 13.7091 40.6289 0 31.2961C15.0723 44.5215 50.3019 22.1644 69.4414 34.0314Z" fill="#F9FBFD"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z" fill="#F9FBFD"></path>
+</svg>
+
+            <span class="visually-hidden">Главная страница</span>
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Преимущества</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Направления</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Ближайшие круизы</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="footer__social-list">
+      <li class="footer__social-item">
+        <a class="footer__social-link footer__social-link--facebook" href="#">
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+      <li class="footer__social-item">
+        <a class="footer__social-link footer__social-link--instagram" href="#">
+          <span class="visually-hidden">Instagram</span>
+        </a>
+      </li>
+      <li class="footer__social-item">
+        <a class="footer__social-link footer__social-link--twitter" href="#">
+          <span class="visually-hidden">Twitter</span>
+        </a>
+      </li>
+    </ul>
+  </footer>
 
   <script src="js/script.js"></script>
 </body>

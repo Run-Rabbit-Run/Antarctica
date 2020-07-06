@@ -1,0 +1,206 @@
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 120px 103px 120px 103px;
+}
+
+.contacts__map {
+  position: relative;
+  
+  width: 560px;
+  height: 306px;
+
+  margin-right: 10px;
+}
+
+.contacts__image {
+  width: 560px;
+  height: 306px;
+  
+  &::before {
+    position: absolute;
+    top: 217px;
+    left: 249px;
+    content: "";
+    
+    width: 18px;
+    height: 22px;
+    
+    background-image: url("../img/icon-mark.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+  }
+}
+
+.contacts__map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border: none;
+}
+
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+  
+  width: 500px;
+  box-sizing: border-box;
+}
+
+.contacts__text {
+  @include reset-indents;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+
+  margin-top: auto;
+  margin-bottom: 32px;
+}
+
+.contacts__address {
+  position: relative;
+  
+  @include reset-indents;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  margin-bottom: 20px;
+  padding-left: 28px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    
+    width: 18px;
+    height: 22px;
+    
+    background-image: url("../img/icon-mark.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+  }
+}
+
+.contacts__tel {
+  position: relative;
+
+  @include reset-indents;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: $color-black;
+
+  margin-bottom: auto;
+
+  padding-left: 28px;
+  
+  &:focus {
+    outline: 3px solid #2090ff;
+  }
+
+  &::before {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    content: "";
+    
+    width: 18px;
+    height: 18px;
+    
+    background-image: url("../img/icon-telephone.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+  }
+}
+
+// ---  Стили для Планшета  ---
+@media (max-width: $tablet-width) {
+  .contacts {
+    padding: 100px 45px 100px 45px;
+  }
+
+  .contacts__map {
+    width: 324px;
+    height: 335px;
+  }
+
+  .contacts__map iframe {
+    width: 324px;
+    height: 335px;
+  }
+
+  .contacts__image {
+    width: 324px;
+    height: 335px;
+
+    &::before {
+      top: 218px;
+      left: 109px;
+    }
+  }
+
+  .contacts__info {
+    width: 324px;
+  }
+
+  .contacts__text {
+    margin-bottom: 27px;
+  }
+
+  .contacts__address {
+    margin-bottom: 21px;
+
+    &::before {
+      top: 5px;
+    }
+  }
+}
+
+// ---  Стили для Мобильного экрана  ---
+@media (max-width: $mobile-width) {
+  .contacts {
+    flex-direction: column;
+
+    padding: 58px 15px 65px 15px;
+  }
+
+  .contacts__map {
+    align-self: center;
+    
+    width: 290px;
+    height: 316px;
+  }
+
+  .contacts__map iframe {
+    width: 290px;
+    height: 316px;
+  }
+
+  .contacts__image {
+    width: 290px;
+    height: 316px;
+
+    &::before {
+      top: 224px;
+      left: 112px;
+    }
+  }
+
+  .contacts__info {
+    align-self: center;
+    
+    width: 290px;
+    margin-bottom: 36px;
+
+    order: -1;
+  }
+}
