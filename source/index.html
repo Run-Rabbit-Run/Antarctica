@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Лучший сайт во вселенной, чтобы охладить ваши пылающие п...">
   <title>Круизы в Антарктику</title>
   <link rel="stylesheet" href="css/style.min.css">
   <script src="js/picturefill.min.js"></script>
@@ -46,13 +47,17 @@
         <b>Путешествие на край Земли</b>
         <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
       </div>
+      
       <picture class="promo__image">
+        <!-- 1х: 290px; 2x: 580px -->
         <source type="image/webp" srcset="img/penguins-mobile.webp 1x, img/penguins-mobile2x.webp 2x" media="(max-width: 767px)">
         <source srcset="img/penguins-mobile.jpg 1x, img/penguins-mobile2x.jpg 2x" media="(max-width: 767px)">
+        <!-- 1х: 324px; 2x: 648px -->
         <source type="image/webp" srcset="img/penguins-tablet.webp 1x, img/penguins-tablet2x.webp 2x" media="(max-width: 1023px)">
         <source srcset="img/penguins-tablet.jpg 1x, img/penguins-tablet2x.jpg 2x" media="(max-width: 1023px)">
+        <!-- 1х: 560px; 2x: 1120px -->
         <source type="image/webp" srcset="img/penguins-desktop.webp 1x, img/penguins-desktop2x.webp 2x">
-        <img src="img/penguins-desktop.jpg" srcset="img/penguins-desktop2x.jpg 2x" alt="Пингвины">
+        <img src="img/penguins-desktop.jpg" srcset="img/penguins-desktop2x.jpg 2x" loading="lazy" alt="Пингвины">
       </picture>
     </section>
 
@@ -373,14 +378,17 @@
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__map">
         <picture class="contacts__image">
+          <!-- 1х: 290px; 2x: 580px -->
           <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile2x.webp 2x" media="(max-width: 767px)">
           <source srcset="img/map-mobile.jpg 1x, img/map-mobile2x.jpg 2x" media="(max-width: 767px)">
+          <!-- 1х: 324px; 2x: 648px -->
           <source type="image/webp" srcset="img/map-tablet.webp 1x, img/map-tablet2x.webp 2x" media="(max-width: 1023px)">
           <source srcset="img/map-tablet.jpg 1x, img/map-tablet2x.jpg 2x" media="(max-width: 1023px)">
+          <!-- 1х: 560px; 2x: 1120px -->
           <source type="image/webp" srcset="img/map-desktop.webp 1x, img/map-desktop2x.webp 2x">
-          <img src="img/map-desktop.jpg" srcset="img/map-desktop2x.jpg 2x" alt="г. Санкт-Петербург, ул. Большая Конюшенная, 19/8">
+          <img src="img/map-desktop.jpg" srcset="img/map-desktop2x.jpg 2x" loading="lazy" alt="г. Санкт-Петербург, ул. Большая Конюшенная, 19/8">
         </picture>
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ada1302d513c3263de89082e58a3918366bf9f37aa79c43b733e09ffc6156e381&amp;source=constructor" width="560" height="306"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ada1302d513c3263de89082e58a3918366bf9f37aa79c43b733e09ffc6156e381&amp;source=constructor" width="560" height="306" loading="lazy"></iframe>
       </div>
       <div class="contacts__info">
         <b class="contacts__text">У вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и мы вам все расскажем.</b>

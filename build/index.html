@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Лучший сайт во вселенной, чтобы охладить ваши пылающие п...">
   <title>Круизы в Антарктику</title>
   <link rel="stylesheet" href="css/style.min.css">
   <script src="js/picturefill.min.js"></script>
@@ -16,12 +17,7 @@
       <ul class="navigation__list">
         <li class="navigation__item navigation__item--logo">
           <a class="navigation__link">
-            <svg width="70" height="38" viewBox="0 0 70 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0.903517 31.125L14.6726 12.5429L18.4395 14.556L27.4026 0L32.9879 6.65881L35.0665 4.95532L43.1199 15.1755L48.8355 8.36191L64.8126 31.125L49.42 11.7689L47.0817 19.8984L49.225 26.3249L35.456 7.35558L35.3069 13.8279L43.1199 31.125L28.5064 4.33574L32.7282 18.8145L26.8181 4.72292L23.5706 14.0916L24.2198 7.97472L16.1013 30.0411L17.0753 20.75L13.6981 17.0338L0.903517 31.125Z" fill="#F9FBFD"></path>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M69.4414 34.0314C47.641 16.428 13.7091 40.6289 0 31.2961C15.0723 44.5215 50.3019 22.1644 69.4414 34.0314Z" fill="#F9FBFD"></path>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z" fill="#F9FBFD"></path>
-</svg>
-
+            <svg width="70" height="38" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M.904 31.125l13.769-18.582 3.766 2.013L27.404 0l5.585 6.659 2.078-1.704 8.054 10.22 5.716-6.813 15.977 22.763L49.42 11.769l-2.338 8.13 2.143 6.426-13.769-18.97-.15 6.473 7.814 17.297-14.614-26.79 4.222 14.48-5.91-14.092-3.247 9.369.649-6.117L16.1 30.04l.974-9.291-3.377-3.716L.904 31.125z" fill="#F9FBFD"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M69.441 34.031C47.641 16.428 13.71 40.63 0 31.296c15.072 13.226 50.302-9.132 69.441 2.735z" fill="#F9FBFD"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M70 35.416c-17.104-10.899-42.543 4.268-55.581.756 14.128 6.856 40.43-8.336 55.581-.756z" fill="#F9FBFD"></path></svg>
             <span class="visually-hidden">Главная страница</span>
           </a>
         </li>
@@ -51,13 +47,17 @@
         <b>Путешествие на край Земли</b>
         <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
       </div>
+      
       <picture class="promo__image">
+        <!-- 1х: 290px; 2x: 580px -->
         <source type="image/webp" srcset="img/penguins-mobile.webp 1x, img/penguins-mobile2x.webp 2x" media="(max-width: 767px)">
         <source srcset="img/penguins-mobile.jpg 1x, img/penguins-mobile2x.jpg 2x" media="(max-width: 767px)">
+        <!-- 1х: 324px; 2x: 648px -->
         <source type="image/webp" srcset="img/penguins-tablet.webp 1x, img/penguins-tablet2x.webp 2x" media="(max-width: 1023px)">
         <source srcset="img/penguins-tablet.jpg 1x, img/penguins-tablet2x.jpg 2x" media="(max-width: 1023px)">
+        <!-- 1х: 560px; 2x: 1120px -->
         <source type="image/webp" srcset="img/penguins-desktop.webp 1x, img/penguins-desktop2x.webp 2x">
-        <img src="img/penguins-desktop.jpg" srcset="img/penguins-desktop2x.jpg 2x" alt="Пингвины">
+        <img src="img/penguins-desktop.jpg" srcset="img/penguins-desktop2x.jpg 2x" loading="lazy" alt="Пингвины">
       </picture>
     </section>
 
@@ -378,14 +378,17 @@
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__map">
         <picture class="contacts__image">
+          <!-- 1х: 290px; 2x: 580px -->
           <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile2x.webp 2x" media="(max-width: 767px)">
           <source srcset="img/map-mobile.jpg 1x, img/map-mobile2x.jpg 2x" media="(max-width: 767px)">
+          <!-- 1х: 324px; 2x: 648px -->
           <source type="image/webp" srcset="img/map-tablet.webp 1x, img/map-tablet2x.webp 2x" media="(max-width: 1023px)">
           <source srcset="img/map-tablet.jpg 1x, img/map-tablet2x.jpg 2x" media="(max-width: 1023px)">
+          <!-- 1х: 560px; 2x: 1120px -->
           <source type="image/webp" srcset="img/map-desktop.webp 1x, img/map-desktop2x.webp 2x">
-          <img src="img/map-desktop.jpg" srcset="img/map-desktop2x.jpg 2x" alt="г. Санкт-Петербург, ул. Большая Конюшенная, 19/8">
+          <img src="img/map-desktop.jpg" srcset="img/map-desktop2x.jpg 2x" loading="lazy" alt="г. Санкт-Петербург, ул. Большая Конюшенная, 19/8">
         </picture>
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ada1302d513c3263de89082e58a3918366bf9f37aa79c43b733e09ffc6156e381&amp;source=constructor" width="560" height="306"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ada1302d513c3263de89082e58a3918366bf9f37aa79c43b733e09ffc6156e381&amp;source=constructor" width="560" height="306" loading="lazy"></iframe>
       </div>
       <div class="contacts__info">
         <b class="contacts__text">У вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и мы вам все расскажем.</b>
@@ -400,12 +403,7 @@
       <ul class="navigation__list">
         <li class="navigation__item navigation__item--logo">
           <a class="navigation__link">
-            <svg width="70" height="38" viewBox="0 0 70 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0.903517 31.125L14.6726 12.5429L18.4395 14.556L27.4026 0L32.9879 6.65881L35.0665 4.95532L43.1199 15.1755L48.8355 8.36191L64.8126 31.125L49.42 11.7689L47.0817 19.8984L49.225 26.3249L35.456 7.35558L35.3069 13.8279L43.1199 31.125L28.5064 4.33574L32.7282 18.8145L26.8181 4.72292L23.5706 14.0916L24.2198 7.97472L16.1013 30.0411L17.0753 20.75L13.6981 17.0338L0.903517 31.125Z" fill="#F9FBFD"></path>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M69.4414 34.0314C47.641 16.428 13.7091 40.6289 0 31.2961C15.0723 44.5215 50.3019 22.1644 69.4414 34.0314Z" fill="#F9FBFD"></path>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z" fill="#F9FBFD"></path>
-</svg>
-
+            <svg width="70" height="38" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M.904 31.125l13.769-18.582 3.766 2.013L27.404 0l5.585 6.659 2.078-1.704 8.054 10.22 5.716-6.813 15.977 22.763L49.42 11.769l-2.338 8.13 2.143 6.426-13.769-18.97-.15 6.473 7.814 17.297-14.614-26.79 4.222 14.48-5.91-14.092-3.247 9.369.649-6.117L16.1 30.04l.974-9.291-3.377-3.716L.904 31.125z" fill="#F9FBFD"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M69.441 34.031C47.641 16.428 13.71 40.63 0 31.296c15.072 13.226 50.302-9.132 69.441 2.735z" fill="#F9FBFD"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M70 35.416c-17.104-10.899-42.543 4.268-55.581.756 14.128 6.856 40.43-8.336 55.581-.756z" fill="#F9FBFD"></path></svg>
             <span class="visually-hidden">Главная страница</span>
           </a>
         </li>
