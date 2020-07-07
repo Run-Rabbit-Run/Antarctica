@@ -1,17 +1,27 @@
 .promo {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 
   padding: 120px 103px 115px 103px;
 }
 
 .promo__image {
   align-self: center;
+  width: 50%;
+  max-width: 560px;
+}
+
+.promo__image img {
+  width: 100%;
 }
 
 .promo__description {
-  margin-top: 56px;
   margin-right: 4px;
+  width: 50%;
+
+  align-self: center;
+  padding-bottom: 8px;
 }
 
 .promo__description b {
@@ -19,6 +29,8 @@
   font-size: 28px;
   line-height: 150%;
   @include reset-indents;
+
+  padding-right: 30px;
 }
 
 .promo__description p {
@@ -28,7 +40,7 @@
   @include reset-indents;
 
   margin-top: 24px;
-  padding-right: 70px;
+  padding-right: 50px;
 }
 
 //  ---  Для планшетов  ---
@@ -38,7 +50,13 @@
   }
 
   .promo__description {
+    padding-bottom: 0;
     margin-top: -9px;
+  }
+
+  .promo__image {
+    // max-width: 324px;
+    width: 48%;
   }
 
   .promo__description b {
@@ -51,7 +69,7 @@
   
   .promo__description p {
     margin-top: 16px;
-    padding-right: 30px;
+    padding-right: 14px;
   }
 }
 
@@ -63,16 +81,25 @@
     padding: 66px 15px 60px 15px;
   }
 
+  .promo__description {
+    width: 100%;
+    margin-right: 0;
+  }
+  
   .promo__description b {
     font-size: 24px;
     line-height: 34px;
 
-    padding-right: 85px;
+    padding-right: 90px;
   }
 
   .promo__description p {
     margin-top: 15px;
     margin-bottom: 33px;
     padding-right: 0;
+  }
+
+  .promo__image {
+    width: 100%;
   }
 }

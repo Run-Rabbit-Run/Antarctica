@@ -11,7 +11,7 @@
   background-position: 0 0;
   background-size: cover;
 
-  &--astoria-background {
+  &--astoria {
     background-image: url("../img/bcg-astoria-desktop.png");
 
     @media (min-resolution: $retina-dppx) {
@@ -21,7 +21,7 @@
     }
   }
 
-  &--alain-background {
+  &--alain {
     background-image: url("../img/bcg-minion-desktop.png");
 
     @media (min-resolution: $retina-dppx) {
@@ -30,7 +30,7 @@
       }
     }
   }
-  &--atlantis-background {
+  &--atlantis {
     background-image: url("../img/bcg-atlantis-desktop.png");
 
     @media (min-resolution: $retina-dppx) {
@@ -39,7 +39,7 @@
       }
     }
   }
-  &--odissey-background {
+  &--odissey {
     background-image: url("../img/bcg-odissey-desktop.png");
 
     @media (min-resolution: $retina-dppx) {
@@ -48,7 +48,7 @@
       }
     }
   }
-  &--olimpia-background {
+  &--olimpia {
     background-image: url("../img/bcg-olimpia-desktop.png");
 
     @media (min-resolution: $retina-dppx) {
@@ -57,7 +57,7 @@
       }
     }
   }
-  &--avrora-background {
+  &--avrora {
     background-image: url("../img/bcg-avrora-desktop.png");
 
     @media (min-resolution: $retina-dppx) {
@@ -66,7 +66,7 @@
       }
     }
   }
-  &--leonor-background {
+  &--leonor {
     background-image: url("../img/bcg-leonor-desktop.png");
 
     @media (min-resolution: $retina-dppx) {
@@ -75,7 +75,7 @@
       }
     }
   }
-  &--minion-background {
+  &--minion {
     background-image: url("../img/bcg-minion-desktop.png");
 
     @media (min-resolution: $retina-dppx) {
@@ -154,7 +154,7 @@
     width: 309px;
     padding: 29px 35px 5px 33px;
 
-    &--astoria-background {
+    &--astoria {
       background-image: url("../img/bcg-astoria-tablet.png");
   
       @media (min-resolution: $retina-dppx) {
@@ -164,7 +164,7 @@
       }
     }
   
-    &--alain-background {
+    &--alain {
       background-image: url("../img/bcg-minion-tablet.png");
   
       @media (min-resolution: $retina-dppx) {
@@ -173,7 +173,7 @@
         }
       }
     }
-    &--atlantis-background {
+    &--atlantis {
       background-image: url("../img/bcg-atlantis-tablet.png");
   
       @media (min-resolution: $retina-dppx) {
@@ -182,7 +182,7 @@
         }
       }
     }
-    &--odissey-background {
+    &--odissey {
       background-image: url("../img/bcg-odissey-tablet.png");
   
       @media (min-resolution: $retina-dppx) {
@@ -191,7 +191,7 @@
         }
       }
     }
-    &--olimpia-background {
+    &--olimpia {
       background-image: url("../img/bcg-olimpia-tablet.png");
   
       @media (min-resolution: $retina-dppx) {
@@ -200,7 +200,7 @@
         }
       }
     }
-    &--avrora-background {
+    &--avrora {
       background-image: url("../img/bcg-avrora-tablet.png");
   
       @media (min-resolution: $retina-dppx) {
@@ -209,7 +209,7 @@
         }
       }
     }
-    &--leonor-background {
+    &--leonor {
       background-image: url("../img/bcg-leonor-tablet.png");
   
       @media (min-resolution: $retina-dppx) {
@@ -218,7 +218,7 @@
         }
       }
     }
-    &--minion-background {
+    &--minion {
       background-image: url("../img/bcg-minion-tablet.png");
   
       @media (min-resolution: $retina-dppx) {
@@ -241,7 +241,7 @@
     width: 270px;
     padding: 29px 25px 5px 23px;
 
-    &--astoria-background {
+    &--astoria {
       background-image: url("../img/bcg-astoria-mobile.png");
   
       @media (min-resolution: $retina-dppx) {
@@ -251,7 +251,7 @@
       }
     }
   
-    &--alain-background {
+    &--alain {
       background-image: url("../img/bcg-minion-mobile.png");
   
       @media (min-resolution: $retina-dppx) {
@@ -260,7 +260,7 @@
         }
       }
     }
-    &--atlantis-background {
+    &--atlantis {
       background-image: url("../img/bcg-atlantis-mobile.png");
   
       @media (min-resolution: $retina-dppx) {
@@ -269,7 +269,7 @@
         }
       }
     }
-    &--odissey-background {
+    &--odissey {
       background-image: url("../img/bcg-odissey-mobile.png");
   
       @media (min-resolution: $retina-dppx) {
@@ -278,7 +278,7 @@
         }
       }
     }
-    &--olimpia-background {
+    &--olimpia {
       background-image: url("../img/bcg-olimpia-mobile.png");
   
       @media (min-resolution: $retina-dppx) {
@@ -287,7 +287,7 @@
         }
       }
     }
-    &--avrora-background {
+    &--avrora {
       background-image: url("../img/bcg-avrora-mobile.png");
   
       @media (min-resolution: $retina-dppx) {
@@ -296,7 +296,7 @@
         }
       }
     }
-    &--leonor-background {
+    &--leonor {
       background-image: url("../img/bcg-leonor-mobile.png");
   
       @media (min-resolution: $retina-dppx) {
@@ -305,7 +305,7 @@
         }
       }
     }
-    &--minion-background {
+    &--minion {
       background-image: url("../img/bcg-minion-mobile.png");
   
       @media (min-resolution: $retina-dppx) {

@@ -9,5 +9,6 @@ menuToggle.addEventListener('click', function () {
     menu.classList.remove('navigation--open');
   } else {
     menu.classList.add('navigation--open');
+    menuToggle.style.display = "inline-block";
   }
 });

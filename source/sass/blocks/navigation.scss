@@ -99,6 +99,7 @@
     background-position: 0 0;
     background-color: transparent;
 
+
     &:focus {
       outline: 3px solid #2090ff;
     }
@@ -161,6 +162,8 @@
     height: 15px;
 
     background-image: url("/img/icon-close.svg");
+
+    display: none;
   }
 
   &:focus {
