@@ -17,7 +17,7 @@ var include = require("posthtml-include");
 var del = require("del");
 
 gulp.task("css", function () {
-  return gulp.src("source/sass/style.scss")
+  return gulp.src("source/sass/styles.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())

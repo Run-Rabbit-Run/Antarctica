@@ -1,0 +1,48 @@
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%); 
+  margin: -1px;
+}
+
+.body {
+  position: relative;
+  
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 138px;
+
+  width: 1366px;
+  // width: 768px;
+  // width: 320px;
+  min-width: 320px;
+  box-sizing: border-box;
+
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: $color-black;
+
+  background-color: $color-white;
+}
+
+// ---  Стили для Планшета  ---
+@media (max-width: $tablet-width) {
+  .body {
+    padding-bottom: 120px;
+  }
+}
+
+// ---  Стили для Мобильного экрана  ---
+@media (max-width: $mobile-width) {
+  .body {
+  padding-bottom: 283px;
+  }
+}
