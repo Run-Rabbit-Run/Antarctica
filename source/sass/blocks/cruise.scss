@@ -334,4 +334,13 @@
     bottom: 6px;
     left: 23px;
   }
+
+  .cruise__button {
+    left: 25px;
+    width: calc(100% - 50px);
+  }
+
+  .cruise:hover caption {
+    left: 23px;
+  }
 }
