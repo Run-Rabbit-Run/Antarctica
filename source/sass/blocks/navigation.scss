@@ -39,7 +39,15 @@
   line-height: 20px;
 
   &:focus {
-    outline: 3px solid #2090ff;
+    outline: 2px solid #2090ff;
+  }
+
+  &:hover {
+    color: rgb(132, 181, 255);
+  }
+
+  &:active {
+    outline: 2px solid #ffffff;
   }
 }
 
@@ -102,6 +110,14 @@
 
     &:focus {
       outline: 3px solid #2090ff;
+    }
+    
+    &:hover {
+      outline: 1px solid #70a2d4;
+    }
+  
+    &:active {
+      outline: 2px solid #ffffff;
     }
   }
 
@@ -168,6 +184,14 @@
 
   &:focus {
     outline: 3px solid #2090ff;
+  }
+
+  &:hover {
+    outline: 1px solid #70a2d4;
+  }
+
+  &:active {
+    outline: 2px solid #ffffff;
   }
 }
 

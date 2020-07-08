@@ -24,6 +24,7 @@
   height: 43px;
   margin-bottom: 20px;
   padding-left: 16px;
+  padding-right: 16px;
   box-sizing: border-box;
 
   font-family: "Montserrat", "Open Sans", sans-serif;
@@ -47,6 +48,10 @@
   &:focus {
     outline: 3px solid #2090ff;
   }
+
+  &:hover {
+    box-shadow: inset 0 0 2px 2px #2090ff;
+  }
 }
 
 .booking__personal-data-text {
@@ -59,12 +64,15 @@
   color: $color-white;
 
   padding-left: 23px;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  margin-top: -10px;
 
   cursor: pointer;
 
   &::before {
     position: absolute;
-    top: -4px;
+    top: 6px;
     left: 0;
     content: "";
 
@@ -84,6 +92,16 @@
 .booking__personal-data-checkbox:focus + .booking__personal-data-text::before {
   outline: 3px solid #2090ff;
 }
+
+.booking__personal-data-checkbox:hover + .booking__personal-data-text::before {
+  box-shadow: 0 0 2px 2px #2090ff;
+}
+
+.booking__personal-data-checkbox:active + .booking__personal-data-text::before {
+  box-shadow: inset 0 0 2px 2px #2090ff;
+}
+
+
 
 .booking__submit {
   display: block;
@@ -118,9 +136,10 @@
 
   .booking__personal-data-text {
     padding-left: 28px;
+    margin-top: -12px;
 
     &::before {
-      top: 3px;
+      top: 13px;
   
       width: 20px;
       height: 20px;
@@ -130,7 +149,6 @@
   }
 
   .booking__submit {
-    margin-top: 22px;
-    padding-left: 53px;
+    margin-top: 24px;
   }
 }

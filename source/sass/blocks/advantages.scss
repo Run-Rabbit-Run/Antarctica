@@ -75,14 +75,14 @@
     background-position: 0 0;
   }
 
-  &--ship-icon::before {
+  &--ship::before {
     width: 27px;
     height: 32px;
     
     background-image: url("../img/icon-ship-desktop.svg");
   }
 
-  &--tick-icon::before {
+  &--tick::before {
     top: 35px;
 
     width: 38px;
@@ -91,7 +91,7 @@
     background-image: url("../img/icon-tick-desktop.svg");
   }
 
-  &--boat-icon::before {
+  &--boat::before {
     top: 38px;
 
     width: 42px;
@@ -115,6 +115,10 @@
     }
   }
 
+  .advantages__list {
+    justify-content: flex-start;
+  }
+
   .advantages h2 {
     font-size: 26px;
     line-height: 39px;
@@ -131,20 +135,29 @@
     width: 206px;
     min-height: 310px;
     padding: 71px 17px 0 20px;
+    margin-right: 30px;
+    
+    &:first-child {
+      margin-left: auto;
+    }
+
+    &:last-child {
+      margin-right: auto;
+    }
 
     &::before {
       top: 25px;
       left: 20px;
     }
 
-    &--ship-icon::before {
+    &--ship::before {
       width: 21px;
       height: 26px;
 
       background-image: url("../img/icon-ship.svg");
     }
   
-    &--tick-icon::before {
+    &--tick::before {
       top: 29px;
   
       width: 33px;
@@ -153,7 +166,7 @@
       background-image: url("../img/icon-tick.svg");
     }
   
-    &--boat-icon::before {
+    &--boat::before {
       top: 32px;
   
       width: 38px;
@@ -180,6 +193,7 @@
 
   .advantages__list {
     flex-direction: column;
+    justify-content: space-between;
   }
 
   .advantages h2 {
@@ -201,9 +215,15 @@
     min-height: 250px;
     margin-bottom: 30px;
     margin-right: 0;
+    margin-left: 0;
+
+    &:first-child {
+      margin-left: 0;
+    }
 
     &:nth-last-child(1) {
       margin-bottom: 0;
+      margin-right: 0;
     }
   }
 }

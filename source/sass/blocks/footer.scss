@@ -67,7 +67,15 @@
   }
 
   &:focus {
-    outline: 3px solid #2090ff;
+    outline: 2px solid #2090ff;
+  }
+
+  &:hover {
+    box-shadow: 0 0 2px 2px #2090ff;
+  }
+
+  &:active {
+    box-shadow: 0 0 5px 2px #e2f1ff;
   }
 }
 
