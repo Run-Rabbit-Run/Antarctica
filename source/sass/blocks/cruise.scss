@@ -3,7 +3,7 @@
   
   width: 260px;
   min-height: 386px;
-  padding: 29px 25px 5px 23px;
+  padding: 29px 25px 69px 23px;
   box-sizing: border-box;
 
   background-color: $color-black;
@@ -91,6 +91,10 @@
   background-image: none;
 }
 
+.cruise__card {
+  padding-top: 36px;
+}
+
 .cruise__card caption {
   font-weight: 500;
   font-size: 18px;
@@ -107,7 +111,8 @@
 }
 
 .cruise:hover caption {
-  position: static;
+  top: 29px;
+  left: 23px;
 }
 
 .cruise__card th {
@@ -231,6 +236,15 @@
 
   .cruise__card caption {
     bottom: 16px;
+    left: 33px;
+  }
+
+  .cruise__button {
+    left: 35px;
+    width: calc(100% - 70px);
+  }
+
+  .cruise:hover caption {
     left: 33px;
   }
 }
