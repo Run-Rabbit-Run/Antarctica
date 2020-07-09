@@ -1,5 +1,9 @@
 .header {
+  position: absolute;
+  top: 0;
+
   height: 110px;
+  width: 100%;
   margin: 0 auto;
   padding: 35px 103px 35px 103px;
   box-sizing: border-box;
@@ -10,14 +14,6 @@
   .header {
     height: 110px;
     padding: 30px 45px 30px 45px;
-
-    background-image: url("../img/antarctica-tablet.jpg");
-  }
-
-  @media (min-resolution: $retina-dppx) {
-    .header {
-      background-image: url("../img/antarctica-tablet2x.jpg");
-    }
   }
 
   .header h1 {
@@ -42,14 +38,6 @@
   .header {
     height: 110px;
     padding: 20px 15px 20px 15px;
-
-    background-image: url("../img/antarctica-mobile.jpg");
-  }
-
-  @media (min-resolution: $retina-dppx) {
-    .header {
-      background-image: url("../img/antarctica-mobile2x.jpg");
-    }
   }
 
   .header h1 {

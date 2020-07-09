@@ -8,7 +8,7 @@
 
 .contacts__map {
   position: relative;
-  
+
   width: 560px;
   height: 306px;
 
@@ -18,16 +18,16 @@
 .contacts__image {
   width: 560px;
   height: 306px;
-  
+
   &::before {
     position: absolute;
     top: 217px;
     left: 249px;
     content: "";
-    
+
     width: 18px;
     height: 22px;
-    
+
     background-image: url("../img/icon-mark.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -46,7 +46,7 @@
 .contacts__info {
   display: flex;
   flex-direction: column;
-  
+
   width: 500px;
   box-sizing: border-box;
 }
@@ -63,7 +63,7 @@
 
 .contacts__address {
   position: relative;
-  
+
   @include reset-indents;
   font-weight: 400;
   font-size: 16px;
@@ -77,10 +77,10 @@
     top: 0;
     left: 0;
     content: "";
-    
+
     width: 18px;
     height: 22px;
-    
+
     background-image: url("../img/icon-mark.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -101,7 +101,7 @@
   width: 170px;
   margin-bottom: auto;
   padding-left: 28px;
-  
+
   &:focus {
     outline: 3px solid #2090ff;
   }
@@ -119,10 +119,10 @@
     top: 2px;
     left: 0;
     content: "";
-    
+
     width: 18px;
     height: 18px;
-    
+
     background-image: url("../img/icon-telephone.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -139,6 +139,8 @@
   .contacts__map {
     width: 324px;
     height: 335px;
+
+    margin-right: 20px;
   }
 
   .contacts__map iframe {
@@ -183,7 +185,7 @@
 
   .contacts__map {
     align-self: center;
-    
+
     width: 290px;
     height: 316px;
     margin-right: 0;
@@ -206,7 +208,7 @@
 
   .contacts__info {
     align-self: center;
-    
+
     width: 290px;
     margin-bottom: 36px;
 

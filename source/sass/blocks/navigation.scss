@@ -1,10 +1,35 @@
 .navigation__list {
+  @include reset-indents;
+  list-style: none;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: flex-end;
 
-  @include reset-indents;
-  list-style: none;
+  margin-left: 50px;
+  margin-right: -33px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation__logo {
+  display: inline-block;
+  flex-shrink: 0;
+
+  width: 70px;
+  height: 38px;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-right: auto;
+
+  background-image: url("../img/logo-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
 }
 
 .navigation__item {
@@ -12,21 +37,8 @@
   flex-direction: row;
 
   margin-right: 33px;
-  margin-top: -3px;
-
-  &:nth-last-child(1) {
-    margin-right: 0;
-  }
-
-  &--logo svg {
-    width: 70px;
-    height: 38px;
-  }
-  
-  &--logo {
-    margin-top: 0;
-    margin-right: auto;
-  }
+  margin-bottom: 8px;
+  padding-top: 9px;
 }
 
 .navigation__link {
@@ -57,17 +69,19 @@
 
 // ---  Стили для Планшета  ---
 @media (max-width: $tablet-width) {
+  .navigation__list {
+    margin-right: -24px;
+  }
+
   .navigation__item {
     margin-right: 24px;
+    padding-top: 2px;
+  }
 
-    &--logo {
-      margin-right: auto;
-    }
-
-    &--logo svg {
-      width: 38px;
-      height: 20px;
-    }
+  .navigation__logo {
+    width: 38px;
+    height: 20px;
+    background-image: url("../img/logo-tablet.svg");
   }
   
   .navigation__link {
@@ -81,15 +95,12 @@
 @media (max-width: $mobile-width) {
   .navigation__item {
     display: none;
+  }
 
-    &--logo {
-      display: flex;
-    }
-
-    &--logo svg {
-      width: 42px;
-      height: 22px;
-    }
+  .navigation__logo {
+    width: 42px;
+    height: 22px;
+    background-image: url("../img/logo-mobile.svg");
   }
 
   .navigation__button-toggle {
@@ -128,7 +139,7 @@
     left: 0;
     padding: 20px 15px 15px 15px;
     width: 100%;
-    height: 299px;
+    min-height: 299px;
     box-sizing: border-box;
 
     background-color: $color-white;
@@ -136,34 +147,28 @@
 
   .navigation--open .navigation__list {
     flex-direction: column;
+    justify-content: flex-start;
+
+    margin-top: 66px;
+    margin-left: 0;
   }
 
   .navigation--open .navigation__item {
     display: flex;
     margin-right: 0;
-    margin-bottom: 21px;
+    margin-bottom: 19px;
 
     align-self: start;
 
-    &--logo {
-      margin-right: auto;
-      margin-bottom: 41px;
-
-      order: -2;
-    }
-
-    &--logo svg {
-      width: 42px;
-      height: 22px;
-    }
-
-    &--logo path {
-      fill: $color-black;
-    }
-
-    &:nth-of-type(3) {
+    &:nth-of-type(2) {
       order: -1;
     }
+  }
+
+  .navigation--open .navigation__logo {
+    position: absolute;
+
+    background-image: url("../img/logo-mobile-open.svg");
   }
 
   .navigation--open .navigation__link {
@@ -186,12 +191,21 @@
 
 //  ---------  Footer  ---------
 
-.navigation--footer .navigation__item--logo {
-  margin-right: 40px;
+.navigation--footer .navigation__list {
+  justify-content: flex-end;
+
+  margin-left: 41px;
+  margin-right: -33px;
 }
+
 
 // ---  Стили для Планшета  ---
 @media (max-width: $tablet-width) {
+  .navigation--footer .navigation__list {
+    margin-left: 25px;
+    margin-right: -23px;
+  }
+
   .navigation--footer .navigation__link {
     font-size: 12px;
     line-height: 15px;
@@ -199,23 +213,20 @@
 
   .navigation--footer .navigation__item {
     margin-right: 23px;
-    margin-top: -5px;
-
-    &:nth-last-child(1) {
-      margin-right: 0;
-    }
   }
 
-  .navigation--footer .navigation__item--logo {
-    margin-right: 25px;
-    margin-top: 0;
-  }
 }
 
 // ---  Стили для Мобильного экрана  ---
 @media (max-width: $mobile-width) {
+  .navigation--footer {
+    flex-direction: column;
+  }
+
   .navigation--footer .navigation__list {
     flex-direction: column;
+
+    margin: 0;
   }
   
   .navigation--footer .navigation__link {
@@ -225,10 +236,11 @@
   .navigation--footer .navigation__item {
     display: flex;
 
-    margin-bottom: 22px;
+    margin-bottom: 15px;
+    margin-right: 0;
   }
 
-  .navigation--footer .navigation__item--logo {
-    margin-bottom: 30px;
+  .navigation--footer .navigation__logo {
+    margin-bottom: 25px;
   }
 }

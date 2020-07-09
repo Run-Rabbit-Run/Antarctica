@@ -1,15 +1,19 @@
 .cruises {
-  padding: 110px 118px 90px 88px;
+  padding: 110px 8.6% 90px 8.6%;
+}
+
+.cruises__wrapper {
+  display: flex;
 }
 
 .cruises__list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  
   @include reset-indents;
   list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .cruises__item {
@@ -28,6 +32,11 @@
 
 // ---  Стили для Планшета  ---
 @media (max-width: $tablet-width) {
+  .cruises {
+    width: auto;
+    margin: 0 auto;
+  }
+
   .cruises h2 {
     font-size: 26px;
     line-height: 39px;

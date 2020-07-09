@@ -1,29 +1,29 @@
 .footer {
-  position: absolute;
-  bottom: 0;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
   width: 100%;
-  height: 138px;
+  min-height: 138px;
   box-sizing: border-box;
 
+  margin-top: auto;
   padding: 50px 103px 50px 103px;
-  
+
   background-color: $color-black;
 }
 
 .footer__social-list {
+  @include reset-indents;
+  list-style: none;
+
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
 
   align-self: center;
-  
-  @include reset-indents;
-  list-style: none;
+
+  margin-left: 50px;
 }
 
 .footer__social-item {
@@ -84,11 +84,12 @@
   .footer {
     padding: 50px 45px 50px 45px;
 
-    height: 120px;
+    min-height: 120px;
   }
 
   .footer__social-item {
     margin-left: 23px;
+    padding-bottom: 5px;
   }
 
   .footer__social-link {
@@ -96,12 +97,12 @@
       width: 9px;
       height: 16px;
     }
-  
+
     &--instagram {
       width: 16px;
       height: 16px;
     }
-  
+
     &--twitter {
       width: 16px;
       height: 13px;
@@ -113,20 +114,22 @@
 @media (max-width: $mobile-width) {
   .footer {
     flex-direction: column;
-    
+
     padding: 40px 15px 40px 15px;
 
-    height: 283px;
+    min-height: 283px;
   }
 
   .footer__social-list {
     align-self: flex-start;
 
     margin-top: 0;
+    margin-left: 0;
   }
 
   .footer__social-item {
     margin: 0;
     margin-right: 23px;
+    padding-bottom: 0;
   }
 }
