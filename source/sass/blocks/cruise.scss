@@ -86,7 +86,8 @@
   }
 }
 
-.cruise:hover {
+.cruise:hover,
+.cruise:focus {
   box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
   background-color: $color-black;
   background-image: none;
@@ -111,7 +112,8 @@
   left: 29px;
 }
 
-.cruise:hover caption {
+.cruise:hover caption,
+.cruise:focus caption {
   top: 29px;
   left: 23px;
 }
@@ -128,7 +130,10 @@
 
 .cruise:hover th,
 .cruise:hover td,
-.cruise:hover .cruise__button {
+.cruise:hover .cruise__button,
+.cruise:focus th,
+.cruise:focus td,
+.cruise:focus .cruise__button {
   opacity: 1;
 }
 
@@ -341,7 +346,8 @@
     width: calc(100% - 50px);
   }
 
-  .cruise:hover caption {
+  .cruise:hover caption,
+  .cruise:focus caption {
     left: 23px;
   }
 }
