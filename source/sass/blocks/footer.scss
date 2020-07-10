@@ -48,22 +48,16 @@
   &--facebook {
     width: 11px;
     height: 20px;
-
-    background-image: url("../img/icon-facebook.svg");
   }
 
   &--instagram {
     width: 20px;
     height: 20px;
-
-    background-image: url("../img/icon-instagram.svg");
   }
 
   &--twitter {
     width: 20px;
     height: 16px;
-
-    background-image: url("../img/icon-twitter.svg");
   }
 
   &:focus {
@@ -90,6 +84,21 @@
   .footer__social-item {
     margin-left: 23px;
     padding-bottom: 5px;
+  }
+
+  .footer__facebook {
+    width: 9px;
+    height: 16px;
+  }
+
+  .footer__instagram {
+    width: 16px;
+    height: 16px;
+  }
+
+  .footer__twitter {
+    width: 16px;
+    height: 13px;
   }
 
   .footer__social-link {

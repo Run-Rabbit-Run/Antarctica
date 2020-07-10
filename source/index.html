@@ -23,6 +23,9 @@
       <button class="navigation__button-toggle" type="button" aria-label="Открыть/закрыть меню"></button>
 
       <a class="navigation__logo">
+        <svg class="navigation__logo-svg" width="70" height="38" viewBox="0 0 70 38">
+          <use xlink:href="img/sprite_auto.svg#icon-logo-desktop"></use>
+        </svg>
         <span class="visually-hidden">Главная страница</span>
       </a>
 
@@ -55,7 +58,7 @@
         <b>Путешествие на край Земли</b>
         <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
       </div>
-      
+
       <picture class="promo__image">
         <!-- 1х: 290px; 2x: 580px -->
         <source type="image/webp" srcset="img/penguins-mobile.webp 1x, img/penguins-mobile2x.webp 2x" media="(max-width: 767px)">
@@ -118,12 +121,12 @@
               <tr>
                 <td>от 11500 $</td>
               </tr>
-              <a class="button cruise__button" href="cruses/astoria.html">
-                <span>Забронировать</span>
-              </a>
             </table>
+            <a class="button cruise__button" href="cruses/astoria.html">
+              <span>Забронировать</span>
+            </a>
           </li>
-  
+
           <li class="cruises__item cruise cruise--alain">
             <table class="cruise__card">
               <caption>Круиз “Элайн”</caption>
@@ -156,7 +159,7 @@
               <span>Забронировать</span>
             </a>
           </li>
-  
+
           <li class="cruises__item cruise cruise--atlantis">
             <table class="cruise__card">
               <caption>Круиз “Атлантис”</caption>
@@ -189,7 +192,7 @@
               <span>Забронировать</span>
             </a>
           </li>
-  
+
           <li class="cruises__item cruise cruise--odissey">
             <table class="cruise__card">
               <caption>Круиз “Одиссей”</caption>
@@ -222,7 +225,7 @@
               <span>Забронировать</span>
             </a>
           </li>
-  
+
           <li class="cruises__item cruise cruise--olimpia">
             <table class="cruise__card">
               <caption>Круиз “Олимпия”</caption>
@@ -255,7 +258,7 @@
               <span>Забронировать</span>
             </a>
           </li>
-  
+
           <li class="cruises__item cruise cruise--avrora">
             <table class="cruise__card">
               <caption>Круиз “Аврора”</caption>
@@ -288,7 +291,7 @@
               <span>Забронировать</span>
             </a>
           </li>
-  
+
           <li class="cruises__item cruise cruise--leonor">
             <table class="cruise__card">
               <caption>Круиз “Леонор”</caption>
@@ -321,7 +324,7 @@
               <span>Забронировать</span>
             </a>
           </li>
-  
+
           <li class="cruises__item cruise cruise--minion">
             <table class="cruise__card">
               <caption>Круиз “Минион - 1”</caption>
@@ -376,7 +379,7 @@
           <input class="booking__input-field" type="email" id="email" placeholder="grishaewa.lera@gmail.com" required>
           <label class="visually-hidden" for="email">Ваш адрес электронной почты</label>
 
-          <input class="visually-hidden booking__personal-data-checkbox" type="checkbox" id="personal-data" checked>
+          <input class="visually-hidden booking__personal-data-checkbox" type="checkbox" id="personal-data" checked required>
           <label class="booking__personal-data-text" for="personal-data">Я согласен на обработку моих&nbsp;персональных данных</label>
 
           <button class="booking__submit button" type="submit">Оставить заявку</button>
@@ -433,16 +436,25 @@
     <ul class="footer__social-list">
       <li class="footer__social-item">
         <a class="footer__social-link footer__social-link--facebook" href="#">
+          <svg class="footer__facebook" width="11" height="20" viewBox="0 0 11 20">
+            <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
+          </svg>
           <span class="visually-hidden">Facebook</span>
         </a>
       </li>
       <li class="footer__social-item">
         <a class="footer__social-link footer__social-link--instagram" href="#">
+          <svg class="footer__instagram" width="20" height="20" viewBox="0 0 20 20">
+            <use xlink:href="img/sprite_auto.svg#icon-instagram"></use>
+          </svg>
           <span class="visually-hidden">Instagram</span>
         </a>
       </li>
       <li class="footer__social-item">
         <a class="footer__social-link footer__social-link--twitter" href="#">
+          <svg class="footer__twitter" width="20" height="16" viewBox="0 0 20 16">
+            <use xlink:href="img/sprite_auto.svg#icon-twitter"></use>
+          </svg>
           <span class="visually-hidden">Twitter</span>
         </a>
       </li>

@@ -2,7 +2,7 @@
   padding: 110px 8.6% 90px 8.6%;
 }
 
-.cruises__wrapper {
+.cruises__flex-wrapper {
   display: flex;
 }
 
@@ -35,15 +35,12 @@
   .cruises {
     width: auto;
     margin: 0 auto;
+    padding: 90px 60px 70px 60px;
   }
 
   .cruises h2 {
     font-size: 26px;
     line-height: 39px;
-  }
-
-  .cruises {
-    padding: 90px 60px 70px 60px;
   }
 }
 
@@ -63,5 +60,9 @@
   .cruises__item {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .cruises__list {
+    flex-direction: column;
   }
 }
