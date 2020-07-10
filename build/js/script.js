@@ -1,10 +1,11 @@
 'use strict';
- try {
-  (function () {
-    let menu = document.querySelector('.navigation');
-    let menuToggle = document.querySelector('.navigation__button-toggle');
-    let telInput = document.querySelector('.booking__input-field[type="tel"]');
 
+(function () {
+  let menu = document.querySelector('.header__navigation');
+  let menuToggle = document.querySelector('.navigation__button-toggle');
+  let telInput = document.querySelector('.booking__input-field[type="tel"]');
+
+  if (menu) {
     menu.classList.remove('navigation--open');
 
     menuToggle.onclick = function () {
@@ -19,7 +20,8 @@
     telInput.onclick = function () {
       telInput.value = telInput.value.replace(/[^\d]/g, '');
     };
-  })();
-} catch (err) {
-  console.log("Кое-чего не хватает");
-}
+  }
+})();
+
+
+
