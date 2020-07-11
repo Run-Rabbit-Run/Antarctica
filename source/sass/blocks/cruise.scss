@@ -1,9 +1,12 @@
 .cruise {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-  width: 23%;
+  width: 23.01%;
+  min-width: 220px;
   min-height: 386px;
-  padding: 29px 25px 69px 23px;
+  padding: 29px 25px 28px 25px;
   box-sizing: border-box;
 
   background-color: #6cb1f3;
@@ -94,7 +97,11 @@
 }
 
 .cruise__card {
-  padding-top: 36px;
+  display: flex;
+  flex-direction: column;
+
+  margin-left: -2px;
+  margin-bottom: -6px;
 }
 
 .cruise__card caption {
@@ -104,18 +111,24 @@
   color: $color-white;
   text-align: left;
 
-  margin-bottom: 11px;
-  margin-left: 2px;
+  margin-bottom: 0;
+  padding-left: 2px;
+  margin-left: 5px;
 
-  position: absolute;
-  bottom: 11px;
-  left: 29px;
+  order: 2;
 }
 
 .cruise:hover caption,
 .cruise:focus caption {
-  top: 29px;
-  left: 23px;
+  order: -1;
+
+  margin-bottom: 11px;
+  margin-left: 0;
+}
+
+.cruise__card {
+  display: flex;
+  flex-direction: column;
 }
 
 .cruise__card th {
@@ -150,20 +163,24 @@
 }
 
 .cruise__button {
-  position: absolute;
-  bottom: 35px;
-  left: 25px;
-
-  width: calc(100% - 50px);
+  width: 100%;
+  margin-bottom: 7px;
 
   opacity: 0;
+
+  order: -1;
+}
+
+.cruise:hover .cruise__button,
+.cruise:focus .cruise__button {
+  order: 1;
 }
 
 // ---  Стили для Планшета  ---
 @media (max-width: $tablet-width) {
   .cruise {
     width: 309px;
-    padding: 29px 35px 5px 33px;
+    padding: 29px 35px 33px 35px;
 
     &--astoria {
       background-image: url("../img/bcg-astoria-tablet.png");
@@ -241,17 +258,11 @@
   }
 
   .cruise__card caption {
-    bottom: 16px;
-    left: 33px;
+    margin-left: 0;
   }
 
   .cruise__button {
-    left: 35px;
-    width: calc(100% - 70px);
-  }
-
-  .cruise:hover caption {
-    left: 33px;
+    margin-bottom: 2px;
   }
 }
 
@@ -259,7 +270,7 @@
 @media (max-width: $mobile-width) {
   .cruise {
     width: 270px;
-    padding: 29px 25px 5px 23px;
+    padding: 29px 25px 23px 25px;
 
     &--astoria {
       background-image: url("../img/bcg-astoria-mobile.png");
@@ -336,18 +347,7 @@
     }
   }
 
-  .cruise__card caption {
-    bottom: 6px;
-    left: 23px;
-  }
-
   .cruise__button {
-    left: 25px;
-    width: calc(100% - 50px);
-  }
-
-  .cruise:hover caption,
-  .cruise:focus caption {
-    left: 23px;
+    margin-bottom: 12px;
   }
 }

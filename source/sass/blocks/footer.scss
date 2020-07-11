@@ -3,6 +3,7 @@
   min-height: 138px;
   box-sizing: border-box;
 
+  padding: 50px 103px 50px 103px;
   margin-top: auto;
 
   background-color: $color-black;
@@ -13,8 +14,8 @@
   flex-direction: row;
   justify-content: space-between;
 
-  padding: 50px 103px 50px 103px;
   margin: 0 auto;
+  height: 100%;
   max-width: 1366px;
   box-sizing: border-box;
 }
@@ -45,11 +46,9 @@
 .footer__social-link {
   display: inline-block;
 
-  align-self: center;
+  color: $color-white;
 
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: cover;
+  align-self: center;
 
   &--facebook {
     width: 11px;
@@ -67,24 +66,26 @@
   }
 
   &:focus {
-    outline: 2px solid #2090ff;
+    transform: scale(1.1);
+    color: #7fbefd;
   }
 
   &:hover {
-    box-shadow: 0 0 2px 2px #2090ff;
+    transform: scale(1.1);
+    color: #a2d1ff;
   }
 
   &:active {
-    box-shadow: 0 0 5px 2px #e2f1ff;
+    transform: scale(1.2);
+    color: #359aff;
   }
 }
 
 // ---  Стили для Планшета  ---
 @media (max-width: $tablet-width) {
   .footer {
-    padding: 50px 45px 50px 45px;
-
     min-height: 120px;
+    padding: 50px 45px 50px 45px;
   }
 
   .footer__social-item {
@@ -128,17 +129,18 @@
 // ---  Стили для Мобильного экрана  ---
 @media (max-width: $mobile-width) {
   .footer {
-    flex-direction: column;
-
-    padding: 40px 15px 40px 15px;
-
     min-height: 283px;
+    padding: 40px 15px 40px 15px;
+  }
+
+  .footer__wrapper {
+    flex-direction: column;
   }
 
   .footer__social-list {
     align-self: flex-start;
 
-    margin-top: 0;
+    margin-top: 12px;
     margin-left: 0;
   }
 

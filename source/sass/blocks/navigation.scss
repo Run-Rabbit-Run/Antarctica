@@ -50,15 +50,16 @@
   line-height: 20px;
 
   &:focus {
-    outline: 2px solid #2090ff;
+    color: rgb(164, 201, 255);
+    transform: scale(1.02);
   }
 
   &:hover {
-    color: rgb(132, 181, 255);
+    transform: scale(1.02);
   }
 
   &:active {
-    outline: 2px solid #ffffff;
+    transform: scale(1.05);
   }
 }
 
@@ -124,6 +125,8 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-color: transparent;
+
+    opacity: 1;
 
 
     &:focus {
@@ -193,7 +196,7 @@
 
     background-image: url("/img/icons/icon-close.svg");
 
-    display: none;
+    opacity: 0;
   }
 }
 
@@ -201,7 +204,7 @@
 //  ---------  Footer  ---------
 
 .navigation--footer .navigation__list {
-  justify-content: flex-end;
+  justify-content: flex-start;
 
   margin-left: 41px;
   margin-right: -33px;
@@ -223,7 +226,6 @@
   .navigation--footer .navigation__item {
     margin-right: 23px;
   }
-
 }
 
 // ---  Стили для Мобильного экрана  ---

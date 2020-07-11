@@ -2,7 +2,7 @@
   height: 650px;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 270px 103px 0 103px;
+  padding: 270px 103px 50px 103px;
   box-sizing: border-box;
 }
 
@@ -45,7 +45,7 @@
 @media (max-width: $tablet-width) {
   .head {
     height: 638px;
-    padding: 268px 45px 0 45px;
+    padding: 268px 45px 50px 45px;
   }
 
   .head-bcg {
@@ -78,7 +78,7 @@
 @media (max-width: $mobile-width) {
   .head {
     height: 500px;
-    padding: 175px 15px 0 15px;
+    padding: 175px 15px 40px 15px;
   }
 
   .head-bcg {

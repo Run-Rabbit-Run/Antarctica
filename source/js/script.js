@@ -13,11 +13,13 @@
         menu.classList.remove('navigation--open');
       } else {
         menu.classList.add('navigation--open');
-        menuToggle.style.display = "inline-block";
+        menuToggle.style.opacity = "1";
       }
     };
+  }
 
-    telInput.onclick = function () {
+  if (telInput) {
+    telInput.onkeyup = function () {
       telInput.value = telInput.value.replace(/[^\d]/g, '');
     };
   }
