@@ -1,10 +1,4 @@
 .reservation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  padding: 50px 163px 50px 163px;
-
   background-color: #a7d0f9;
   background-image: url("../img/bcg-booking-desktop.png");
   background-repeat: no-repeat;
@@ -16,6 +10,16 @@
   .reservation {
     background-image: url("../img/bcg-booking-desktop2x.png");
   }
+}
+
+.reservation__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 50px 163px 50px 163px;
+  max-width: 1366px;
+  margin: 0 auto;
 }
 
 .reservation__description {
@@ -50,10 +54,6 @@
 // ---  Стили для Планшета  ---
 @media (max-width: $tablet-width) {
   .reservation {
-    flex-direction: column;
-
-    padding: 88px 0 100px 0;
-
     background-image: url("../img/bcg-booking-tablet.png");
   }
 
@@ -61,6 +61,12 @@
     .reservation {
       background-image: url("../img/bcg-booking-tablet2x.png");
     }
+  }
+
+  .reservation__wrapper {
+    flex-direction: column;
+
+    padding: 88px 0 100px 0;
   }
 
   .reservation__form {
@@ -98,8 +104,6 @@
 // ---  Стили для Мобильного экрана  ---
 @media (max-width: $mobile-width) {
   .reservation {
-    padding: 59px 0 65px 0;
-
     background-image: url("../img/bcg-booking-mobile.png");
   }
 
@@ -107,6 +111,10 @@
     .reservation {
       background-image: url("../img/bcg-booking-mobile2x.png");
     }
+  }
+
+  .reservation__wrapper {
+    padding: 59px 0 65px 0;
   }
 
   .reservation__description h2 {

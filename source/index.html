@@ -18,40 +18,42 @@
   <script src="js/picturefill.min.js"></script>
 </head>
 <body class="body">
-  <header class="header">
-    <nav class="header__navigation navigation navigation--open">
-      <button class="navigation__button-toggle" type="button" aria-label="Открыть/закрыть меню"></button>
+  <div class="head-bcg">
+    <header class="header">
+      <nav class="header__navigation navigation navigation--open">
+        <button class="navigation__button-toggle" type="button" aria-label="Открыть/закрыть меню"></button>
 
-      <a class="navigation__logo">
-        <svg class="navigation__logo-svg" width="70" height="38" viewBox="0 0 70 38">
-          <use xlink:href="img/sprite_auto.svg#icon-logo-desktop"></use>
-        </svg>
-        <span class="visually-hidden">Главная страница</span>
-      </a>
+        <a class="navigation__logo">
+          <svg class="navigation__logo-svg" width="70" height="38" viewBox="0 0 70 38">
+            <use xlink:href="img/sprite_auto.svg#icon-logo-desktop"></use>
+          </svg>
+          <span class="visually-hidden">Главная страница</span>
+        </a>
 
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Преимущества</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Направления</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Ближайшие круизы</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Преимущества</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Направления</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Ближайшие круизы</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <main class="main">
     <section class="head">
       <h1>Круизы в&nbsp;Антарктику</h1>
       <p>Волшебный мир айсбергов и пингвинов</p>
     </section>
+  </div>
 
+  <main class="main">
     <section class="promo">
       <h2 class="visually-hidden">Описание круиза</h2>
       <div class="promo__description">
@@ -73,21 +75,23 @@
     </section>
 
     <section class="advantages">
-      <h2>Преимущества</h2>
-      <ul class="advantages__list">
-        <li class="advantages__item advantages__item--ship">
-          <h3>Небольшой круизный&nbsp;лайнер</h3>
-          <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и&nbsp;очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
-        </li>
-        <li class="advantages__item advantages__item--tick">
-          <h3>Система все&nbsp;включено</h3>
-          <p>Все наши круизы работают по&nbsp;системе “Все Включено”. Великолепные блюда и&nbsp;безлимитный бар доступны для&nbsp;вас 24&nbsp;часа.</p>
-        </li>
-        <li class="advantages__item advantages__item--boat">
-          <h3>Экскурсионные туры&nbsp;на Zodiac</h3>
-          <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на оборудованных лодках типа Zodiac в&nbsp;сопровождении опытных экскурсоводов.</p>
-        </li>
-      </ul>
+      <div class="content-wrapper">
+        <h2>Преимущества</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--ship">
+            <h3>Небольшой круизный&nbsp;лайнер</h3>
+            <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и&nbsp;очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
+          </li>
+          <li class="advantages__item advantages__item--tick">
+            <h3>Система все&nbsp;включено</h3>
+            <p>Все наши круизы работают по&nbsp;системе “Все Включено”. Великолепные блюда и&nbsp;безлимитный бар доступны для&nbsp;вас 24&nbsp;часа.</p>
+          </li>
+          <li class="advantages__item advantages__item--boat">
+            <h3>Экскурсионные туры&nbsp;на Zodiac</h3>
+            <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на оборудованных лодках типа Zodiac в&nbsp;сопровождении опытных экскурсоводов.</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="cruises">
@@ -362,28 +366,30 @@
     </section>
 
     <section class="reservation">
-      <div class="reservation__description">
-        <h2>Раннее бронирование</h2>
-        <p>Забронируйте тур за 3-6 месяцев
-          до&nbsp;даты выезда и&nbsp;сэкономьте до 50%</p>
-      </div>
-      <div class="reservation__form booking">
-        <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время</p>
-        <form action="#" method="POST">
-          <input class="booking__input-field" type="text" id="name" placeholder="Валерия" required>
-          <label class="visually-hidden" for="name">Ваше имя</label>
+      <div class="reservation__wrapper">
+        <div class="reservation__description">
+          <h2>Раннее бронирование</h2>
+          <p>Забронируйте тур за 3-6 месяцев
+            до&nbsp;даты выезда и&nbsp;сэкономьте до 50%</p>
+        </div>
+        <div class="reservation__form booking">
+          <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время</p>
+          <form action="#" method="POST">
+            <input class="booking__input-field" type="text" id="name" placeholder="Валерия" required>
+            <label class="visually-hidden" for="name">Ваше имя</label>
 
-          <input class="booking__input-field" type="tel" id="tel-number" placeholder="89236889975" pattern="[0-9]{10,11}" required>
-          <label class="visually-hidden" for="tel-number">Ваш номер телефона</label>
+            <input class="booking__input-field" type="tel" id="tel-number" placeholder="89236889975" pattern="[0-9]{10,11}" required>
+            <label class="visually-hidden" for="tel-number">Ваш номер телефона</label>
 
-          <input class="booking__input-field" type="email" id="email" placeholder="grishaewa.lera@gmail.com" required>
-          <label class="visually-hidden" for="email">Ваш адрес электронной почты</label>
+            <input class="booking__input-field" type="email" id="email" placeholder="grishaewa.lera@gmail.com" required>
+            <label class="visually-hidden" for="email">Ваш адрес электронной почты</label>
 
-          <input class="visually-hidden booking__personal-data-checkbox" type="checkbox" id="personal-data" checked required>
-          <label class="booking__personal-data-text" for="personal-data">Я согласен на обработку моих&nbsp;персональных данных</label>
+            <input class="visually-hidden booking__personal-data-checkbox" type="checkbox" id="personal-data" checked required>
+            <label class="booking__personal-data-text" for="personal-data">Я согласен на обработку моих&nbsp;персональных данных</label>
 
-          <button class="booking__submit button" type="submit">Оставить заявку</button>
-        </form>
+            <button class="booking__submit button" type="submit">Оставить заявку</button>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -412,56 +418,58 @@
   </main>
 
   <footer class="footer">
-    <nav class="navigation navigation--footer">
-      <a class="navigation__logo">
-        <svg class="navigation__logo-svg" width="70" height="38" viewBox="0 0 70 38">
-          <use xlink:href="img/sprite_auto.svg#icon-logo-desktop"></use>
-        </svg>
-        <span class="visually-hidden">Главная страница</span>
-      </a>
+    <div class="footer__wrapper">
+      <nav class="navigation navigation--footer">
+        <a class="navigation__logo">
+          <svg class="navigation__logo-svg" width="70" height="38" viewBox="0 0 70 38">
+            <use xlink:href="img/sprite_auto.svg#icon-logo-desktop"></use>
+          </svg>
+          <span class="visually-hidden">Главная страница</span>
+        </a>
 
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Преимущества</a>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Преимущества</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Направления</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Ближайшие круизы</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a class="footer__social-link footer__social-link--facebook" href="#">
+            <svg class="footer__facebook" width="11" height="20" viewBox="0 0 11 20">
+              <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
+            </svg>
+            <span class="visually-hidden">Facebook</span>
+          </a>
         </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Направления</a>
+        <li class="footer__social-item">
+          <a class="footer__social-link footer__social-link--instagram" href="#">
+            <svg class="footer__instagram" width="20" height="20" viewBox="0 0 20 20">
+              <use xlink:href="img/sprite_auto.svg#icon-instagram"></use>
+            </svg>
+            <span class="visually-hidden">Instagram</span>
+          </a>
         </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Ближайшие круизы</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Контакты</a>
+        <li class="footer__social-item">
+          <a class="footer__social-link footer__social-link--twitter" href="#">
+            <svg class="footer__twitter" width="20" height="16" viewBox="0 0 20 16">
+              <use xlink:href="img/sprite_auto.svg#icon-twitter"></use>
+            </svg>
+            <span class="visually-hidden">Twitter</span>
+          </a>
         </li>
       </ul>
-    </nav>
-
-    <ul class="footer__social-list">
-      <li class="footer__social-item">
-        <a class="footer__social-link footer__social-link--facebook" href="#">
-          <svg class="footer__facebook" width="11" height="20" viewBox="0 0 11 20">
-            <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
-          </svg>
-          <span class="visually-hidden">Facebook</span>
-        </a>
-      </li>
-      <li class="footer__social-item">
-        <a class="footer__social-link footer__social-link--instagram" href="#">
-          <svg class="footer__instagram" width="20" height="20" viewBox="0 0 20 20">
-            <use xlink:href="img/sprite_auto.svg#icon-instagram"></use>
-          </svg>
-          <span class="visually-hidden">Instagram</span>
-        </a>
-      </li>
-      <li class="footer__social-item">
-        <a class="footer__social-link footer__social-link--twitter" href="#">
-          <svg class="footer__twitter" width="20" height="16" viewBox="0 0 20 16">
-            <use xlink:href="img/sprite_auto.svg#icon-twitter"></use>
-          </svg>
-          <span class="visually-hidden">Twitter</span>
-        </a>
-      </li>
-    </ul>
+    </div>
   </footer>
 
   <script src="js/script.js"></script>

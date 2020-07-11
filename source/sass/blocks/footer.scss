@@ -1,16 +1,22 @@
 .footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
   width: 100%;
   min-height: 138px;
   box-sizing: border-box;
 
   margin-top: auto;
-  padding: 50px 103px 50px 103px;
 
   background-color: $color-black;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 50px 103px 50px 103px;
+  margin: 0 auto;
+  max-width: 1366px;
+  box-sizing: border-box;
 }
 
 .footer__social-list {
