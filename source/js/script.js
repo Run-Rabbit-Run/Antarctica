@@ -1,9 +1,9 @@
 'use strict';
 
 (function () {
-  let menu = document.querySelector('.header__navigation');
-  let menuToggle = document.querySelector('.navigation__button-toggle');
-  let telInput = document.querySelector('.booking__input-field[type="tel"]');
+  var menu = document.querySelector('.header__navigation');
+  var menuToggle = document.querySelector('.navigation__button-toggle');
+  var telInput = document.querySelector('.booking__input-field[type="tel"]');
 
   if (menu) {
     menu.classList.remove('navigation--open');
@@ -13,7 +13,7 @@
         menu.classList.remove('navigation--open');
       } else {
         menu.classList.add('navigation--open');
-        menuToggle.style.opacity = "1";
+        menuToggle.style.opacity = '1';
       }
     };
   }
@@ -24,6 +24,3 @@
     };
   }
 })();
-
-
-

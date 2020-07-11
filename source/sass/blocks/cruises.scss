@@ -62,6 +62,9 @@
 // ---  Стили для Мобильного экрана  ---
 @media (max-width: $mobile-width) {
   .cruises__list {
+    flex-direction: column;
+    justify-content: space-between;
+
     margin-right: 0;
   }
 
@@ -79,10 +82,5 @@
   .cruises__item {
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .cruises__list {
-    flex-direction: column;
-    justify-content: space-between;
   }
 }

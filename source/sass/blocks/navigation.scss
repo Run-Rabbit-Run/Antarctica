@@ -118,6 +118,7 @@
     right: 15px;
     width: 24px;
     height: 14px;
+
     @include reset-indents;
 
     border: none;
@@ -142,7 +143,7 @@
     }
   }
 
-// ---  При открытом меню  ---
+  // ---  При открытом меню  ---
   .navigation--open {
     position: absolute;
     top: 0;

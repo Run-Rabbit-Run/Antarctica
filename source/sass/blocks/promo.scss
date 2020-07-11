@@ -30,6 +30,7 @@
   font-weight: 600;
   font-size: 28px;
   line-height: 150%;
+
   @include reset-indents;
 
   padding-right: 30px;
@@ -39,6 +40,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+
   @include reset-indents;
 
   margin-top: 24px;
