@@ -105,7 +105,6 @@
 .cruise__card {
   display: flex;
   flex-direction: column;
-
   margin-left: -2px;
   margin-bottom: -6px;
 }
@@ -117,11 +116,13 @@
   color: $color-white;
   text-align: left;
 
-  margin-bottom: 0;
   padding-left: 2px;
+  margin-bottom: 0;
   margin-left: 5px;
 
   order: 2;
+
+  transform: translateY(290px);
 }
 
 .cruise:hover caption,
@@ -130,6 +131,8 @@
 
   margin-bottom: 11px;
   margin-left: 0;
+
+  transform: translateY(0);
 }
 
 .cruise__card th {
@@ -139,16 +142,19 @@
   line-height: 20px;
   color: $color-white;
 
-  opacity: 0;
+  display: none;
 }
 
 .cruise:hover th,
 .cruise:hover td,
-.cruise:hover .cruise__button,
 .cruise:focus th,
-.cruise:focus td,
+.cruise:focus td {
+  display: block;
+}
+
+.cruise:hover .cruise__button,
 .cruise:focus .cruise__button {
-  opacity: 1;
+  display: flex;
 }
 
 .cruise__card td {
@@ -160,21 +166,14 @@
 
   padding-bottom: 8px;
 
-  opacity: 0;
+  display: none;
 }
 
 .cruise__button {
   width: 100%;
   margin-bottom: 7px;
 
-  opacity: 0;
-
-  order: -1;
-}
-
-.cruise:hover .cruise__button,
-.cruise:focus .cruise__button {
-  order: 1;
+  display: none;
 }
 
 // ---  Стили для Планшета  ---
