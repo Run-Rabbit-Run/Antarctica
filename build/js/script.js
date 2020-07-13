@@ -3,7 +3,6 @@
 (function () {
   var menu = document.querySelector('.header__navigation');
   var menuToggle = document.querySelector('.navigation__button-toggle');
-  // var telInput = document.querySelector('.booking__input-field[type="tel"]');
 
   if (menu) {
     menu.classList.remove('navigation--open');
