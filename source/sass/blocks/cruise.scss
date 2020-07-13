@@ -1,12 +1,12 @@
 .cruise {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   width: 23.01%;
   min-width: 220px;
   min-height: 386px;
-  padding: 29px 25px 28px 25px;
+  padding: 29px 25px 22px 25px;
   box-sizing: border-box;
 
   background-color: #6cb1f3;
@@ -106,33 +106,33 @@
   display: flex;
   flex-direction: column;
   margin-left: -2px;
-  margin-bottom: -6px;
+  margin-bottom: -7px;
+  padding-top: 11px;
+
+  opacity: 0;
 }
 
-.cruise__card caption {
+.cruise:hover .cruise__card {
+  opacity: 1;
+}
+
+.cruise h3 {
+  @include reset-indents;
+
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
   color: $color-white;
-  text-align: left;
 
-  padding-left: 2px;
-  margin-bottom: 0;
   margin-left: 5px;
 
-  order: 2;
-
-  transform: translateY(290px);
+  order: 1;
 }
 
-.cruise:hover caption,
-.cruise:focus caption {
-  order: -1;
+.cruise:hover h3 {
+  margin-left: 0px;
 
-  margin-bottom: 11px;
-  margin-left: 0;
-
-  transform: translateY(0);
+  order: 0;
 }
 
 .cruise__card th {
@@ -141,20 +141,11 @@
   font-size: 14px;
   line-height: 20px;
   color: $color-white;
-
-  display: none;
-}
-
-.cruise:hover th,
-.cruise:hover td,
-.cruise:focus th,
-.cruise:focus td {
-  display: block;
 }
 
 .cruise:hover .cruise__button,
 .cruise:focus .cruise__button {
-  display: flex;
+  opacity: 1;
 }
 
 .cruise__card td {
@@ -165,15 +156,14 @@
   color: #d8d8d9;
 
   padding-bottom: 8px;
-
-  display: none;
 }
 
 .cruise__button {
   width: 100%;
-  margin-bottom: 7px;
+  margin-top: auto;
+  margin-bottom: 13px;
 
-  display: none;
+  opacity: 0;
 }
 
 // ---  Стили для Планшета  ---

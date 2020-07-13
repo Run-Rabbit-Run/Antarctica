@@ -18,7 +18,7 @@
   }
 
   var phoneMask = IMask(
-    document.getElementById('tel-number'), {
-      mask: '00000000000'
-    });
+      document.getElementById('tel-number'), {
+        mask: '00000000000'
+      });
 })();

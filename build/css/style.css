@@ -1,25 +1,25 @@
 @font-face {
   font-family: "Montserrat";
   font-weight: 400;
-  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../fonts/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat-regular.woff") format("woff");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("./fonts/montserrat-regular.woff2") format("woff2"), url("./fonts/montserrat-regular.woff") format("woff");
   font-display: swap; }
 
 @font-face {
   font-family: "Montserrat";
   font-weight: 500;
-  src: local("Montserrat Medium"), local("Montserrat-Medium"), url("../fonts/montserrat-medium.woff2") format("woff2"), url("../fonts/montserrat-medium.woff") format("woff");
+  src: local("Montserrat Medium"), local("Montserrat-Medium"), url("./fonts/montserrat-medium.woff2") format("woff2"), url("./fonts/montserrat-medium.woff") format("woff");
   font-display: swap; }
 
 @font-face {
   font-family: "Montserrat";
   font-weight: 600;
-  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("../fonts/montserrat-semibold.woff2") format("woff2"), url("../fonts/montserrat-semibold.woff") format("woff");
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("./fonts/montserrat-semibold.woff2") format("woff2"), url("./fonts/montserrat-semibold.woff") format("woff");
   font-display: swap; }
 
 @font-face {
   font-family: "Montserrat";
   font-weight: 700;
-  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../fonts/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("./fonts/montserrat-bold.woff2") format("woff2"), url("./fonts/montserrat-bold.woff") format("woff");
   font-display: swap; }
 
 .visually-hidden {
@@ -683,13 +683,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 23.01%;
   min-width: 220px;
   min-height: 386px;
-  padding: 29px 25px 28px 25px;
+  padding: 29px 25px 22px 25px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #6cb1f3;
@@ -753,32 +753,30 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: -2px;
-  margin-bottom: -6px; }
+  margin-bottom: -7px;
+  padding-top: 11px;
+  opacity: 0; }
 
-.cruise__card caption {
+.cruise:hover .cruise__card {
+  opacity: 1; }
+
+.cruise h3 {
+  margin: 0;
+  padding: 0;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
   color: #f9fbfd;
-  text-align: left;
-  padding-left: 2px;
-  margin-bottom: 0;
   margin-left: 5px;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-  -webkit-transform: translateY(290px);
-          transform: translateY(290px); }
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1; }
 
-.cruise:hover caption,
-.cruise:focus caption {
-  -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1;
-  margin-bottom: 11px;
-  margin-left: 0;
-  -webkit-transform: translateY(0);
-          transform: translateY(0); }
+.cruise:hover h3 {
+  margin-left: 0px;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0; }
 
 .cruise__card th {
   margin: 0;
@@ -786,20 +784,11 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  color: #f9fbfd;
-  display: none; }
-
-.cruise:hover th,
-.cruise:hover td,
-.cruise:focus th,
-.cruise:focus td {
-  display: block; }
+  color: #f9fbfd; }
 
 .cruise:hover .cruise__button,
 .cruise:focus .cruise__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  opacity: 1; }
 
 .cruise__card td {
   margin: 0;
@@ -808,13 +797,13 @@
   font-size: 14px;
   line-height: 20px;
   color: #d8d8d9;
-  padding-bottom: 8px;
-  display: none; }
+  padding-bottom: 8px; }
 
 .cruise__button {
   width: 100%;
-  margin-bottom: 7px;
-  display: none; }
+  margin-top: auto;
+  margin-bottom: 13px;
+  opacity: 0; }
 
 @media (max-width: 1023px) {
   .cruise {
