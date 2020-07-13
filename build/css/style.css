@@ -676,6 +676,7 @@
       margin-right: 0; } }
 
 .cruise {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -737,8 +738,7 @@
       .cruise--minion .header {
         background-image: url("../img/bcg-minion-desktop2x.png"); } }
 
-.cruise:hover,
-.cruise:focus {
+.cruise:hover {
   -webkit-box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
           box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
   background-color: #011c40;
@@ -768,15 +768,25 @@
   line-height: 27px;
   color: #f9fbfd;
   margin-left: 5px;
+  opacity: 0; }
+
+.cruise__decor-header {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #f9fbfd;
+  position: absolute;
+  bottom: 22px;
+  left: 30px; }
+
+.cruise:hover .cruise__decor-header {
   display: none; }
-  .cruise h3:last-child {
-    display: block; }
 
 .cruise:hover h3 {
-  margin-left: 0px;
-  display: block; }
-  .cruise:hover h3:last-child {
-    display: none; }
+  margin-left: 0;
+  opacity: 1; }
 
 .cruise__card th {
   margin: 0;
@@ -786,8 +796,7 @@
   line-height: 20px;
   color: #f9fbfd; }
 
-.cruise:hover .cruise__button,
-.cruise:focus .cruise__button {
+.cruise:hover .cruise__button {
   opacity: 1; }
 
 .cruise__card td {
@@ -865,10 +874,11 @@
         background-image: url("../img/bcg-minion-tablet2x.png"); } }
 
 @media (max-width: 1023px) {
-  .cruise__card caption {
-    margin-left: 0; }
   .cruise__button {
-    margin-bottom: 2px; } }
+    margin-bottom: 2px; }
+  .cruise__decor-header {
+    bottom: 27px;
+    left: 35px; } }
 
 @media (max-width: 767px) {
   .cruise {
@@ -931,7 +941,10 @@
 
 @media (max-width: 767px) {
   .cruise__button {
-    margin-bottom: 12px; } }
+    margin-bottom: 12px; }
+  .cruise__decor-header {
+    bottom: 17px;
+    left: 25px; } }
 
 .cruises {
   padding: 110px 15px 90px 15px;

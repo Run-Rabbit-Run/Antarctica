@@ -1,7 +1,9 @@
 .cruise {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
 
   width: 23.01%;
   min-width: 220px;
@@ -95,8 +97,7 @@
   }
 }
 
-.cruise:hover,
-.cruise:focus {
+.cruise:hover {
   box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
   background-color: $color-black;
   background-image: none;
@@ -125,21 +126,30 @@
   color: $color-white;
   margin-left: 5px;
 
-  display: none;
+  opacity: 0;
+}
 
-  &:last-child {
-    display: block;
-  }
+.cruise__decor-header {
+  @include reset-indents;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-white;
+
+  position: absolute;
+  bottom: 22px;
+  left: 30px;
+}
+
+.cruise:hover .cruise__decor-header {
+  display: none;
 }
 
 .cruise:hover h3 {
-  margin-left: 0px;
+  margin-left: 0;
 
-  display: block;
-
-  &:last-child {
-    display: none;
-  }
+  opacity: 1;
 }
 
 .cruise__card th {
@@ -150,8 +160,7 @@
   color: $color-white;
 }
 
-.cruise:hover .cruise__button,
-.cruise:focus .cruise__button {
+.cruise:hover .cruise__button {
   opacity: 1;
 }
 
@@ -260,12 +269,13 @@
     }
   }
 
-  .cruise__card caption {
-    margin-left: 0;
-  }
-
   .cruise__button {
     margin-bottom: 2px;
+  }
+
+  .cruise__decor-header {
+    bottom: 27px;
+    left: 35px;
   }
 }
 
@@ -358,5 +368,10 @@
 
   .cruise__button {
     margin-bottom: 12px;
+  }
+
+  .cruise__decor-header {
+    bottom: 17px;
+    left: 25px;
   }
 }
