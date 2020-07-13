@@ -5,6 +5,7 @@
 
   width: 23.01%;
   min-width: 220px;
+  min-height: 386px;
   padding: 29px 25px 22px 25px;
   box-sizing: border-box;
 
@@ -122,16 +123,23 @@
   font-size: 18px;
   line-height: 27px;
   color: $color-white;
-
   margin-left: 5px;
 
-  order: 1;
+  display: none;
+
+  &:last-child {
+    display: block;
+  }
 }
 
 .cruise:hover h3 {
   margin-left: 0px;
 
-  order: 0;
+  display: block;
+
+  &:last-child {
+    display: none;
+  }
 }
 
 .cruise__card th {
