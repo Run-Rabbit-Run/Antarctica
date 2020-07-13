@@ -317,7 +317,7 @@
     margin: 0;
     padding: 0;
     border: none;
-    background-image: url("/img/icons/icon-hamburger.svg");
+    background-image: url("../img/icons/icon-hamburger.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-color: transparent;
@@ -374,7 +374,7 @@
     right: 14px;
     width: 15px;
     height: 15px;
-    background-image: url("/img/icons/icon-close.svg");
+    background-image: url("../img/icons/icon-close.svg");
     opacity: 0; } }
 
 .navigation--footer .navigation__list {

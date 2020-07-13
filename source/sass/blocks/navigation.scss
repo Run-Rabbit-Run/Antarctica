@@ -122,7 +122,7 @@
     @include reset-indents;
 
     border: none;
-    background-image: url("/img/icons/icon-hamburger.svg");
+    background-image: url("../img/icons/icon-hamburger.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-color: transparent;
@@ -195,7 +195,7 @@
     width: 15px;
     height: 15px;
 
-    background-image: url("/img/icons/icon-close.svg");
+    background-image: url("../img/icons/icon-close.svg");
 
     opacity: 0;
   }
